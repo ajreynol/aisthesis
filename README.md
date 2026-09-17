@@ -2,9 +2,9 @@
 
 **What can be seen about how this ecosystem develops, written down before it is
 judged.** Two documents, both about the practice of building the Eunoia
-ecosystem rather than about the calculus it is built around: one collects the
-mechanisms that looked strange to somebody watching them happen, the other fixes
-the line past which writing about the future stops being a plan.
+ecosystem rather than about the calculus it is built around: one asks how that
+practice relates to the state of the art in AI systems, the other fixes the line
+past which writing about the future stops being a plan.
 
 Neither is finished, and neither is a result.
 
@@ -12,29 +12,38 @@ Neither is finished, and neither is a result.
 
 | document | what it is for |
 | --- | --- |
-| [`docs/ai-novelty.md`](docs/ai-novelty.md) | the interactions one person found fascinating while developing this ecosystem, which might be of use to the AI community. The entry criterion is that somebody watching thought *that is strange* — not that the thing was important, correct or new |
-| [`docs/science-fiction.md`](docs/science-fiction.md) | the upper bound: the furthest this ecosystem allows itself to plan, and the scenarios written out in order to mark where that ceiling falls |
+| [`docs/ai-novelty.md`](docs/ai-novelty.md) | **review the literature on state-of-the-art AI systems, and say how this ecosystem relates to it.** One row per mechanism this ecosystem runs on, the nearest outside work it would have to be measured against, and the state of that comparison |
+| [`docs/science-fiction.md`](docs/science-fiction.md) | the upper bound: the furthest this ecosystem allows itself to plan, and seven scenarios written out in order to mark where that ceiling falls. **Marked on its own front matter as agent-written fiction that is not to be taken seriously** |
 
 **There is nothing to build and nothing to run.** The work here is reading and
 writing, and the documents are the whole of the output.
 
 ## What this repository does not claim
 
-**Nothing here is a survey.** The literature has not been read, so a reader
-deciding whether any of this is actually new is doing work these pages cannot do
-for them. **Nothing here is a grade:** whether the practice described is any
+**The survey is the goal and it has not been done.** Reviewing the state of the
+art is what `ai-novelty.md` is *for*, and no entry in it has yet been checked
+against a source — every comparison in its register reads `unread`, which is the
+accurate summary of the page today. Names in it are pointers for a review, **not
+citations**. **Nothing here is a grade:** whether the practice described is any
 good is settled elsewhere, and not by this tree. **And nothing here is a
 prediction** — the scenarios are fiction by construction, and the page that
-carries them exists to say so rather than to forecast anything.
+carries them says so at the top in the loudest terms it has.
 
 ## The name
 
 **αἴσθησις — *perception; what is noticed before it is judged*.** It is the
 lower rung of a ladder the vocabulary already contains: *aisthesis* is the
-noticing and *noesis* is the understanding. That is exactly the entry criterion
-of the documents here, and it explains their relocation rule for free — an entry
-that comes to be understood is no longer aisthesis, so it leaves for the
-document that describes whatever machinery it turned out to be part of.
+noticing and *noesis* is the understanding. It explains the relocation rule
+these documents keep, for free — an entry that comes to be understood is no
+longer aisthesis, so it leaves for the document that describes whatever
+machinery it turned out to be part of.
+
+**The name was argued for a weaker entry criterion than the one now in force.**
+It was recommended on the strength of *admitted because somebody watching
+thought that is strange*; the goal is now a literature review, which is a
+judging activity rather than a noticing one. **That is an argument against the
+name, recorded rather than smoothed over**, and it is the maintainer's to
+settle.
 
 **It is not about beauty.** English *aesthetic* descends from the word and a
 careless reader hears that instead; the sense meant here is the older and

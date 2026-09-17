@@ -5,10 +5,19 @@ agent — this is the page to start on.** It is short, because the tree is.
 
 ## What is here
 
-Two written documents and nothing else. [`ai-novelty.md`](ai-novelty.md) is the
-account of what in this ecosystem's practice might be of use to the AI
-community; [`science-fiction.md`](science-fiction.md) is the other half of the
-same reading. Both are prose, still being worked on, and neither is finished.
+Two written documents and nothing else. [`ai-novelty.md`](ai-novelty.md) sets
+out to review the literature on state-of-the-art AI systems and say how this
+ecosystem relates to it; its register carries one row per mechanism and the
+comparison column is empty, which is the honest state of it.
+[`science-fiction.md`](science-fiction.md) is the ceiling on how far ahead this
+ecosystem lets itself write, and is marked at the top as agent-written fiction
+not to be taken seriously. Both are prose, still being worked on, and neither is
+finished.
+
+**The one job worth doing next is the reading**: take a row of that register,
+read what is named in it, and write down what the source actually says. Rows
+that turn out to describe ordinary practice leave the file, which is the point
+of keeping them in one.
 
 ## What the person does
 

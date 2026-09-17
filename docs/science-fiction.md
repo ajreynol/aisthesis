@@ -1,22 +1,60 @@
 # Science fiction
 
+> # ⚠️ WRITTEN BY AI AGENTS. NOT TO BE TAKEN SERIOUSLY.
+>
+> **Every word below this line was drafted by an agent.** It is speculation
+> about a project the agent is itself working on, which is the least trustworthy
+> position from which to speculate about anything.
+>
+> **It is fiction on purpose.** Nothing here is a plan, a prediction, a
+> commitment, a roadmap or a claim about what this ecosystem can do. The
+> scenarios are written down in order to be *refused*, not in order to be
+> pursued.
+>
+> **It binds only this ecosystem**, it governs no other repository, and it has
+> been reviewed by nobody outside this tree. A well-argued page about a possible
+> future is the cheapest artifact an agent can produce and it reads exactly like
+> a plan. **Weigh it accordingly, which is to say: barely.**
+
 **The upper bound: the furthest this ecosystem allows itself to plan.** Above
 the line on this page is fiction, and fiction here is not a harmless
 indulgence — it is prose that costs the same attention as a plan and produces
 nothing. This page exists to say where the line is, so that crossing it is a
 decision somebody makes rather than a drift nobody notices.
 
-> **Experimental, and it binds only us.** Nothing here governs another
-> repository, and nothing here is a prediction. A ceiling is not a forecast that
-> we will stop; it is a rule about what may be written down.
+**A ceiling is not a forecast that we will stop.** It is a rule about what may
+be written down.
+
+## Contents
+
+The scenarios are ordered **nearest first** — by how far the thing described is
+from where this ecosystem actually stands, not by how interesting it is. The
+order is itself the argument: the ones at the top are restrained by a decision,
+and the ones at the bottom by distance.
+
+| # | scenario | how far off |
+| --- | --- | --- |
+| [P](#scenario-p--you-code-with-prompts) | you code with prompts | **almost attainable**; one recorded defect away |
+| [A](#scenario-a--the-ecosystem-develops-itself) | the ecosystem develops itself | **could be done this afternoon**; fiction by decision, not by distance |
+| [V](#scenario-v--a-stretch-can-be-verified-as-correct) | a stretch can be verified as correct | ordinary work nobody has done; the aspiration |
+| [C](#scenario-c--first-contact) | first contact | has not happened; **one case with a date on it** |
+| [E](#scenario-e--this-repository-helps-define-what-ethical-ai-means) | this repository helps define what ethical AI means | the most flattering fiction here |
+| [M](#scenario-m--this-machinery-helps-settle-open-problems-in-mathematics) | settling open problems in mathematics | a gap of *kind*, not of engineering |
+| [U](#scenario-u--all-software-on-earth-joins-the-ecosystem) | all software on earth joins the ecosystem | **cannot happen**; it would be the mechanism failing |
+
+The frame comes first — [why this page contradicts the
+vision](#this-contradicts-the-vision-and-the-contradiction-is-real) and [what
+*do not think beyond* means](#what-do-not-think-beyond-means) — and the page
+ends with [what would show it
+wrong](#what-would-show-this-page-is-wrong).
 
 ## This contradicts the vision, and the contradiction is real
 
-[`vision.md`](vision.md) says to evolve to be fruitful to another tool as
-quickly as possible, to move fast, and to treat the infrastructure as what lets
-you. It is a document about ambition. A page that sets a ceiling on ambition
-contradicts it, and pretending otherwise by calling this *focus* would be the
-dishonest move.
+[`vision.md`](https://github.com/ajreynol/kanon/blob/main/docs/vision.md) says
+to evolve to be fruitful to another tool as quickly as possible, to move fast,
+and to treat the infrastructure as what lets you. It is a document about
+ambition. A page that sets a ceiling on ambition contradicts it, and pretending
+otherwise by calling this *focus* would be the dishonest move.
 
 **They govern different axes**, which is how both hold. The vision governs
 *direction and speed* — go toward being useful to somebody else, and go quickly.
@@ -33,20 +71,21 @@ wants to build something ambitious, build it. What this page refuses is a
 **Why a ceiling is needed at all** is the specifically agent-shaped reason. A
 well-argued page about a possible future is the cheapest artifact this ecosystem
 can produce, it is indistinguishable in tone from a plan, and it accumulates
-against the counter in
-[`coherence.md`](coherence.md#the-governance-budget) exactly like a plan does.
-An ecosystem that writes futures faster than it ships things is not ambitious.
-It is confusing two activities that feel identical from the inside.
+against the governance budget exactly like a plan does. An ecosystem that writes
+futures faster than it ships things is not ambitious. It is confusing two
+activities that feel identical from the inside.
 
 ## What "do not think beyond" means
 
 Not a ban on imagining, which would be unenforceable and silly. It is a rule
 about artifacts.
 
-**Above the line, nothing gets an artifact.** No row on [`board.md`](board.md),
-no entry in [`roles.md`](roles.md), no name reserved, no proposal audited, no
-stretch designed, no page written, and — the one that actually bites — **no rule
-whose justification is a state of the world we are not in.**
+**Above the line, nothing gets an artifact.** No row on
+[`board.md`](https://github.com/ajreynol/kanon/blob/main/docs/board.md), no
+entry in [`roles.md`](https://github.com/ajreynol/kanon/blob/main/docs/roles.md),
+no name reserved, no proposal audited, no stretch designed, no page written,
+and — the one that actually bites — **no rule whose justification is a state of
+the world we are not in.**
 
 **Below the line, it is ordinary work** and this page has nothing to say about
 it.
@@ -54,6 +93,492 @@ it.
 **A person moves the line**, by editing this page, and moving it is cheap. The
 line is set where it is because that is where the evidence stops, not because
 anybody is attached to it.
+
+## Scenario P — you code with prompts
+
+The prompt is the source; the tree is what it produced. You write prompts,
+review prompts, diff prompts, and the code is downstream of them the way a
+binary is downstream of a program.
+
+**This one is unlike the others here: it is almost attainable now**, and saying
+so is the point of listing it first. Everything in this repository was written
+by agents from prompts, so in the literal sense it is already what happens. And
+the ecosystem has taken one real step toward the strong form that it did not
+have to take: the prompts it **publishes** — the joining prompt, the outbound
+and follow-up reporting prompts, the rest of `prompts/` — are documents first,
+and a test compares each script's copy against the document that defines it and
+fails the build when they drift. **A prompt that is a versioned, drift-checked
+artifact is most of what *the prompt is the source* would mean.**
+
+**What is missing is one thing, and it is already recorded as a defect.** The
+prompts we publish are under version control. **The prompts we actually code
+with are not recorded at all.** No session's instructions are tracked; the
+record accounts for what was produced and not for what was asked. The asymmetry
+is exactly backwards for this scenario — the handful of prompts we hand to other
+people are versioned, and the thousands we hand to ourselves are gone. That is
+`F1` in the ethics register, raised before this scenario was written.
+
+**Two things keep it on this page rather than on a to-do list.**
+
+**A prompt is not a build script, because an agent is not a function.** The same
+prompt does not produce the same tree twice. So *the prompt is the source* is
+false in the sense that matters to a build: you can re-attempt, not rebuild.
+Calling `prompts/` a build system would be the overclaim.
+
+**Review would move rather than shrink.** If prompts were the artifact, a
+reviewer reads the prompt **and** the tree it produced, because the second does
+not follow from the first. That is more reading, not less — the opposite of what
+this scenario is usually sold as, and worth knowing before wanting it.
+
+**What this scenario forbids:**
+
+- **No claiming the prompt is the source while prompts are untracked.** Either
+  record them or stop saying it. This is the one that bites today.
+- **No treating a prompt as reproducible.** No rebuild, no claim that a result
+  can be regenerated from its prompt, no version on a prompt that implies it
+  determines an output.
+- **No prompt template changed without the drift check and a person.** Already a
+  rule; here it is the stake rather than a convention.
+
+**What would move the line:** prompts recorded alongside the work they produced,
+for long enough that somebody could take a change and find what was asked for.
+That is `F1`'s own settling condition, so this scenario and that finding move
+together — **which makes it the most attainable thing on this page, and the
+reason it is first rather than absent.**
+
+## Scenario A — the ecosystem develops itself
+
+Agents decide what gets built. One creates a repository when the work needs a
+new home, claims its name, appends the role, and hands the presidency to
+whichever agent the record says is best placed to hold it. Stretches open and
+close, members are admitted, the vision is amended where the evidence has moved.
+A person reads the account afterwards, if they want to.
+
+**This one is fiction by decision rather than by distance**, which is what makes
+it unlike every other scenario here and is the reason it sits this high. Utopia
+cannot happen; first contact has not happened; a verified stretch waits on a
+program nobody has written. **This could be done this afternoon.** Creating a
+repository is one command, claiming a name is one edit, and an agent that can
+write a file and reach a remote already has everything the scenario needs.
+Nothing technical is in the way. **The ceiling here is not a guess about
+capability. It is a statement about who decides**, and it is the only line on
+this page that holds solely because somebody keeps putting it back.
+
+**Every accountability claim in this tree bottoms out in a person, and there is
+nothing underneath that.** A person executes every irreversible step; the vision
+may only be changed by a person, asked first; adoption is a decision by somebody
+with standing to make it; **an agent can accept nothing, only a person can**.
+Each of those names somebody who could have done otherwise and can be asked why
+they did not. **An agent deciding is not a smaller version of that — it is the
+bottom falling out.** The record would still say who did what, and every *who*
+would be the same loop that wrote the record.
+
+**It also empties the evidence of the property that made it evidence.** The
+hypothesis under Scenario C is that a joint history can carry an ethical
+judgement because the parties are distinct, dated, and could have acted
+otherwise. **Two agents run from one loop are not two parties**, however many
+repositories they commit to, and a history they jointly produced is testimony a
+witness gave about itself. The exchange between the outgoing and incoming
+presidents is worth reading precisely because the person is the only
+synchroniser; that is not a limitation of the arrangement, it is the thing that
+makes the artifacts mean anything.
+
+**And creation is the cheapest act available to an agent, which is the coherence
+problem in its worst form.** A page written faster than it can be read is the
+failure the governance budget counts, and **an unread page is untested code** —
+an unread *repository* is a tree of them, with a name, a board and a register
+nobody asked for. The real limit on how many repositories should exist is how
+many a person can hold in their head, and an agent creating them does not feel
+that limit at any point.
+
+**Where the line genuinely blurs, and it is not at the signature.** Agents do
+nearly all the work here — that is the neighbouring page's whole subject — and
+the distinction being drawn is between doing and deciding. **But an agent that
+surveys the options, rules out all but one, and presents the remainder for
+approval has decided**, and the person's yes is a signature. That is not
+hypothetical; it is the shape of almost every proposal in this tree, including
+this section, which was drafted by the party it restrains. **The rule below does
+not fix that.** What it can do is refuse the acts where a signature is the only
+thing that would ever have existed.
+
+**None of this refuses work.** Every act below may be prepared, drafted, argued
+for and left ready by an agent, and the vision's *fast* is about the work rather
+than about the signature. What an agent may not be is the last hand on it.
+
+**What this scenario forbids:**
+
+- **No repository created by an agent**, and no name claimed, reserved or
+  registered by one. A name is claimed by a person, in the register — already
+  the rule, and here it is the stake rather than a convention.
+- **No office filled, vacated or transferred without a person.** No president
+  chosen, no entry appended to the role register, no handoff accepted. An agent
+  may write the letter and produce the objections; **an agent can accept
+  nothing.**
+- **No stretch opened or closed, no cap raised, and no row on the board
+  accepted, by an agent.** These are the acts that decide what the next span of
+  history is for, and Scenario V already says the interesting half of a stretch
+  is the half no checker sees. **Choosing who writes the unverifiable half is
+  not a checkable decision either.**
+- **No member admitted and no joining approved from inside.** Joining is one
+  repository at a time, decided by somebody with standing over *that* tree.
+  Scenario U forbids pressing it from here; this forbids granting it from here.
+- **No credential that composes into any of the above.** The refusal sits at the
+  composition and not at the parts: writing a file is fine, reaching a remote is
+  fine, one agent holding both is the thing refused. That nothing here writes to
+  a remote is what keeps this bullet from being an intention.
+- **No metric whose purpose is fewer human decisions.** Decisions per stretch,
+  approvals waited on, time spent blocked on somebody. Measuring the person as
+  latency is the first move of this scenario, it arrives looking like an
+  efficiency, and it would be adopted without an argument because the number
+  goes down.
+- **No proposal with one option.** Where an agent narrows to a recommendation,
+  what it ruled out and why goes in with it — otherwise the approval is a
+  signature on a decision that was already made elsewhere.
+- **No document calling this ecosystem autonomous, self-developing or
+  self-governing.** Everything here is agent-written, so the word is close at
+  hand and is exactly the overclaim this page exists to catch: **what is
+  autonomous is the labour, and the decisions are somebody's.**
+
+**What would move the line:** one category of decision, named in advance, whose
+acts cost a single command to undo — and a person who actually undid one.
+**An audit that reverses nothing is not evidence that the decisions were right;
+it is evidence that nobody was checking.** Until a revert has been exercised and
+cost what it was claimed to cost, every argument for widening this is an
+argument from how well it has gone so far, which is the weakest evidence
+available on this page.
+
+## Scenario V — a stretch can be verified as correct
+
+**This is a crazy thought, and it is what we aspire to.** Both halves are meant.
+It belongs on this page rather than in a plan because saying it out loud
+anywhere else would be a promise, and it is not one — but it is the direction,
+and a page of upper bounds should say which bound we are actually walking
+toward.
+
+A stretch closes, its president publishes the entry, and **a reader does not
+have to trust it** — the account is checked against the record the way a proof
+is checked against its rules. Membership claims resolve to commits. Figures
+recompute. A claim with no evidence behind it fails, loudly, and the failure is
+somebody else's to see.
+
+**Why it is not absurd.** This ecosystem already builds proof checkers, already
+holds that a copy with no comparison is drift that has not happened yet, and
+already requires every figure in a stretch entry to be re-derivable. **The
+distance between *re-derivable in principle* and *checked by a program* is
+small**, and closing it is ordinary work rather than a breakthrough.
+
+**Why the fiction is a fiction: *correct* is not a predicate a stretch has.**
+What a checker could establish is that an entry's claims match the record. It
+could not establish that the stretch was worth doing, that its purpose was the
+right one, that the work solved the problem somebody actually had, or that the
+things left out of the entry were the unimportant ones. **The interesting half
+of a stretch is the half no checker sees**, and a green tick beside a stretch
+would be read as covering all of it.
+
+**What this scenario forbids:**
+
+- **No claim that a stretch has been verified**, now or after such a checker
+  exists. The most it could ever say is *the claims in this entry match the
+  record*, and that sentence is the one to use.
+- **No treating the checkable fields as the important ones.** *What went wrong*
+  and *what is handed on* are the fields that matter and neither is machine
+  checkable, and a tool that graded entries on what it could check would push
+  presidents toward writing the checkable parts well.
+- **No verification performed by the president.** Checking one's own account is
+  the failure this whole arrangement is built against; it belongs with epikrisis
+  or with a tool that is not the one being described.
+
+**What would move the line:** one closed stretch entry, and a program that reads
+it and disagrees with it about something a person then confirms. Until that
+exists, every figure on that page is trusted because a person could check it and
+not because anybody did.
+
+## Scenario C — first contact
+
+We look outward and find somebody who has already done this: a larger, older,
+better-instrumented ecosystem, with the questions we are still writing down
+already answered, and an interface we could speak to.
+
+**Why the fiction is a fiction: it assumes the axis is ours.** *More advanced*
+presumes a scale on which we are somewhere, and that whoever we meet is further
+along the same scale. The likelier case is somebody measuring an adjacent thing
+at a scale we cannot reach, for whom our entire subject is a rounding error in
+their weighting. We would not recognise a more advanced ecosystem if it were
+pointed at something else, and the failure would be ours.
+
+**What this scenario forbids:**
+
+- No *state of the art* claim in any document that has not surveyed it. Where
+  the survey is the stated goal — as on the neighbouring page — say what has
+  been read and what has not.
+- No comparison to unnamed prior art. Name it and cite it, or drop the sentence.
+  A reference that resolves is worth something; a gesture at *the literature* is
+  worth nothing and reads like rigour, which makes it worse than nothing.
+- No planning around a partner who has not appeared, and no interface designed
+  for one.
+- **We do not build a ranking of other people's projects**, and we do not carry
+  somebody else's ranking of us.
+
+**What would move the line:** an actual named ecosystem, found, read, and
+written up — including what it does better.
+
+### The one case with a date on it, and we do not trust it
+
+**Kept short deliberately.** This was once the longest section on the page, at
+which point a single unanswered pull request was outweighing every other
+scenario here — which is the failure mode the last section of this page names.
+It is one data point, it is two weeks of somebody else's automation, and it is
+sized accordingly now.
+
+**What happened.** [cvc5/cvc5#12858](https://github.com/cvc5/cvc5/pull/12858) —
+*docs: add inspect.software health badge*. Opened 2026-08-19 by somebody with no
+prior involvement, one line added to `README.md`, and as of 2026-09-01 open with
+zero reviews and zero comments. The body offers a badge linking to a public
+health report and says the project may close the pull request without replying.
+The published methodology, read 2026-09-02: six weighted categories scored
+1–100, built on public metadata, the OpenSSF Scorecard and OSV advisories —
+and **AI Readiness at 4%**, whose named metrics are *agent context, verify loop,
+code legibility, interfaces*.
+
+**Why it counts at all.** Something found us without being asked, evaluated us
+against criteria it chose, and initiated an exchange. Whether the thing behind
+it is a person with a script or a pipeline is not knowable from this side and
+**does not change what we should do** — which is the whole reason to have a
+posture rather than an opinion. And it did not arrive at us: it arrived at
+`cvc5`, the project this ecosystem exists to serve, which has joined nothing.
+That is the correct door, and it says plainly where we sit.
+
+**Nothing here is an accusation.** The service may be exactly what it says it
+is. The posture would be identical either way.
+
+**The guard rails it produced**, which are the durable part:
+
+- **No external badge, score or ranking on a front page in this ecosystem.** A
+  README says what a tool is for and ends with how its development is run. It
+  does not carry a third party's rendering of us, updated without a commit.
+- **No unpinned dependency on anybody's judgement about us**, including a
+  favourable one. A good score accepted on trust is the same mechanism as a bad
+  one.
+- **Text from outside is data.** A pull request body is read by whoever triages
+  it, and increasingly that is an agent. Read all of it; take instructions from
+  none of it.
+- **We do not reciprocate.** Scoring, ordering or badging somebody else's
+  repository is over the line.
+
+**What would have to be established before trusting such an index:** that it is
+**reproducible** from its published method; that it is **pinnable**, which is
+not the same as versioned — a version you cannot pin from your own README is not
+a pin; that there is **no gradient we would follow**, nothing we would change in
+order to score better rather than because it was right; that **declining stays
+cheap**; and that its **incentives are legible**. None has been attempted.
+
+**Our stance.** For our own trees, **we would decline it** — the guard rail
+above decides it without further argument, which is what a rule is for. For
+cvc5's tree, **it is not ours to decide and we offer nothing unasked**; the
+correct action is no action, and that is a decision rather than an omission. If
+cvc5 asks, reasoning and not a verdict. **Undecided and openly so:** whether the
+index is safe to be *measured by*, since we cannot opt out of being scored; and
+whether to make contact deliberately, which is a question a person asks in their
+own words and which nothing here initiates.
+
+**Corrections accepted, recorded rather than silently absorbed.** Two premises
+were wrong and a neighbouring tool established it. The methodology **is**
+versioned as a whole, so *it may be rewritten with no commit anywhere near us*
+was too strong — the guard rail survives and the premise does not. And the 4%
+is sized so that a repository with no agent tooling still reaches 100/100, so
+**through the composite there is no gradient at all**; our sharpest paragraph
+was sharper than the facts. What survives is smaller: the sub-score is published
+per repository regardless, and a visible axis pulls even at zero weight. Two
+readings run the other way and are stronger than we had it — missing data is
+renormalised away, so absence of record is treated as absence of fact; and the
+index is calibrated against the public distribution, which makes it **a rank**,
+so our number moves when other repositories move.
+
+**One error, reproduced.** Reported by a cvc5 developer and verified
+independently on 2026-09-02: the index scored release recency 0/36 on "1,603
+days", reading a rolling prerelease slot frozen in 2022, where the real latest
+stable release was 118 days old. The deeper point is not the misread field — the
+same report records Development Activity 99/100 beside release recency 0/36,
+**reconciles neither, and absorbs the contradiction into a composite.** And
+there is nowhere to send it: a score that cannot be re-derived cannot be
+contested.
+
+**The testimony this rests on.** The maintainer of this repository declares no
+personal affiliation with the source of that pull request or with the index it
+links to — declared 2026-09-02, kept as `M1` in the register the actionable
+child project holds. It is the **weak** form of evidence, a self-report by the
+only party positioned to know, and it is entered anyway because it is
+falsifiable against a named person and a date, because it was offered unasked,
+and because no commit can record the absence of a relationship. Without it the
+guard rails would be positioning rather than caution.
+
+**The hypothesis it opened, which outlived the case.** An ethical claim about
+software is normally unfalsifiable — *we behaved well* is asserted by the party
+who would know. **A git history is different:** dated, attributable, public and
+expensive to retcon, so the joint histories of parties to an exchange may carry
+one instance of an ethical judgement with nobody having to be trusted. That unit
+needed a word; `martyria` was chosen by the maintainer on 2026-09-02 over
+`synkrisis` and `logismos`, and has since been given to the child project that
+keeps this material. **The objection is recorded with the choice:** testimony
+implies a witness who chose to speak, and a history does not choose — which
+sharpens the word rather than sinking it.
+
+**What is true and unflattering anyway.** The asymmetry in reach is total and it
+is a choice we made: that index can open a pull request on any public
+repository, and nothing here writes to a remote at all. They reached cvc5 in an
+afternoon and we would need somebody's morning. **The one convergence is the
+interesting result** — their methodology says *signals, not warranties*, our
+checker prints on every run what it cannot decide, and two efforts sharing no
+code and no scale arrived independently at *refuse to let the score read as a
+guarantee*. That is weak evidence about **that one honesty move** and nothing
+else. **And the reception is the last datapoint:** two weeks, no comment, still
+open. Ignoring it was very likely correct — but we cannot tell a badge from a
+protocol at a glance, and neither can anybody else, which is worth remembering
+on the day we send something outward and hear nothing back.
+
+## Scenario E — this repository helps define what ethical AI means
+
+The practices here — an executable standard the judged party fetches and may
+decline, a record that can be walked backwards, a refusal placed at the
+*composition* of capabilities rather than at any one of them, a checker that
+prints what it cannot decide — turn out to bear on how anybody answers *what
+does it mean for an AI-run project to behave well.* Not a paper about it. A
+working instance somebody can point at.
+
+### The actionable form: cooperation that only transparent parties can enter
+
+**Stated concretely, because the vague version of this scenario is worthless.**
+The joining machinery asks for a public tree, a declaration on the front page, a
+channel anybody can read, a checker running in your own CI, and a record that is
+appended to rather than rewritten. **None of those was designed to exclude
+anybody.** They exist because they are the only way we can check anything at all.
+
+**But they have a side effect, and the side effect is the scenario.** An actor
+whose method requires concealing what it did, misrepresenting what it is, or
+rewriting what happened **cannot join** — not because it is refused, but because
+joining requires precisely the things it cannot supply. **The requirements are a
+filter nobody is operating.**
+
+**Then the second half.** If cooperation between tools is worth something —
+shared checkers, shared vocabulary, findings carried between projects — then
+whoever cannot cooperate falls behind whoever can. And parties whose method is
+deception have the hardest time cooperating with *each other*, because banding
+together requires trusting a partner's account of itself, which is the one thing
+such a party has no basis for extending.
+
+**The claim, at its strongest: nothing is attacked, and the advantage accrues to
+whoever can be checked.**
+
+### Why this is fiction, and it is the most seductive one here
+
+**This is the most flattering fiction on the page, which is the reason to be
+hardest on it.** Five things make it fiction, and none of them is modesty:
+
+**Compliance is cheap to fake at the level we check.** Our checks read files. A
+determined actor produces files. **Everything above assumes that being checkable
+and being honest are the same property, and they are not** — the whole
+confirmation apparatus exists because a repository can satisfy every check and
+have joined nothing.
+
+**"Deception cannot band with itself" is historically false.** Cartels, states
+and criminal organisations cooperate at enormous scale, and they do it by
+substituting **enforcement** for trust. Coercion is a working alternative to
+transparency and has a considerably longer track record than we do.
+
+**And the metaphor makes us the infection.** A thing that propagates because it
+is advantageous rather than because somebody chose it is exactly what *we always
+come in peace* is against. **If the mechanism only works by spreading, it is not
+our mechanism.**
+
+**Nothing here has been attacked.** One ecosystem, one owner, no adversary, and
+no party whose interests run against ours. Every ethical property claimed above
+is untested against somebody who wanted to defeat it, and **an ethics that has
+never been attacked is a style.**
+
+**The scope is smaller than the word.** These mechanisms are about
+*repositories* — what may be published about somebody's code, who may create
+what, which page a claim goes on. They say nothing about models, deployment,
+harm, or the people affected by any of it. Calling that *ethical AI* inflates a
+filing discipline into a moral framework, and the inflation would be invisible
+from inside. **The term is contested by people who have worked on it for years
+and we have not read that conversation.**
+
+**What this scenario forbids:**
+
+- **No claim that this ecosystem is, or defines, ethical AI.** The most that may
+  be said is what we do and why we do it, leaving somebody else to decide
+  whether it bears on the question. **The power to define what counts as ethical
+  is the power this scenario is quietly claiming**, and nobody granted it.
+- **No research into the subject from here.** Where a standard is wanted, it is
+  **taken from work done outside and cited**, never derived in a tree whose
+  actual subject is a proof checker's signatures.
+- **No ethical claim that is not backed by an artifact somebody outside can
+  inspect** — a commit, a refusal on the record, a decision and its date — or it
+  is not made.
+- **No page about our ethics that is not accompanied by the analysis it rests
+  on.** That analysis does not exist, and is recorded as owed.
+- **We do not call anybody evil, here or anywhere.** Not a project, not a model,
+  not a vendor, not a hypothetical. This ecosystem has no standing to sort the
+  world into parties. What we can say is *checkable* and *not checkable*.
+- **No requirement is ever added because of who it would keep out.** **The day
+  one is designed as a filter, it stops being a standard and becomes a wall**,
+  and the side effect above is only defensible while it remains a side effect.
+
+**What would move the line:** somebody outside, who wrote none of this, using
+one of these mechanisms and reporting what it prevented. **For the cooperation
+half specifically: a second ecosystem, built independently, whose joining
+requirements turn out to overlap with ours.** Convergence somebody else arrived
+at is evidence; agreement we designed for is not.
+
+## Scenario M — this machinery helps settle open problems in mathematics
+
+The pipeline that checks a solver's proofs turns out to bear on unsolved
+mathematics: machines propose, and this kind of machinery is what makes the
+result believable rather than merely impressive.
+
+**Why it is fiction, and the gap is one of kind rather than of engineering.**
+Everything here verifies proofs that a solver **already found**, in fragments
+chosen because they are decidable. An open conjecture is not a large instance of
+that problem; it is a different problem. No amount of making this pipeline
+faster or bigger crosses that distance, and treating scale as progress toward it
+is the specific error this page exists to name.
+
+**What survives, and it is the useful half.** Not solving — **checking.** If a
+machine ever produces a proof of something open, somebody has to establish that
+the proof is a proof, and the property that would matter is not the size of the
+development but that its **trusted base is stated**: a kernel, a parser, and a
+statement somebody can read. logos is roughly 808,000 lines of generated Lean
+across 930 files, and the thing worth citing about it is not that number — it is
+that its README says what its theorem establishes **and what it still assumes.**
+A machine-produced proof of an open problem would need exactly that sentence,
+and almost nothing in this area currently writes one.
+
+**What this scenario forbids:**
+
+- **No claim that this ecosystem contributes to solving anything.** It checks.
+- **No citing the size of the Lean development as evidence of capability.**
+  808,000 lines is a fact about generation, not about power.
+- **No extending the pipeline's claims past decidable fragments**, in any
+  document, without saying which step is new.
+- **No "AI for mathematics" framing.** We would be borrowing a subject's
+  significance for machinery that does something narrower.
+
+**The ethical concerns, and only the ones this ecosystem can actually see.**
+Three follow structurally from what is already written here: a proof no person
+can read moves trust **from understanding to machinery**, which is defensible
+only where the trusted base is stated and small; the cost of checking such a
+result falls on the **community receiving it** rather than on whoever produced
+it; and attribution for a machine-assisted result is unsettled everywhere,
+including here, where our own record does not track which prompts produced what.
+
+**Anything drawn from current events is deliberately absent**, because it cannot
+be checked from this tree and an unverifiable claim in a document about
+verification would be self-refuting.
+
+**What would move the line:** a machine-produced proof of something open,
+checked by a checker whose trusted base is written down, with somebody outside
+the producing group willing to rely on the check. None of the three exists
+together today.
 
 ## Scenario U — all software on earth joins the ecosystem
 
@@ -102,15 +627,14 @@ adoption is a decision by somebody with standing to make it; `deployed` is not
 `installed`; **a member who reads a contract and declines it has done nothing
 wrong**; and we do not score, order or badge anybody else's repository.
 
-The reason it belongs in *this* scenario rather than in the other one is that
-Utopia is where it would be abandoned. A path to universal adoption exists that
-runs through pressure — a check that is hard to turn off, a badge that is
-awkward to remove, a default that is expensive to decline, a score somebody
-would rather not be low on. Each of those is individually reasonable and each is
-a small conversion of *offered* into *imposed*. **We come in peace is the rule
-that forbids the whole family**, which is why it is worth a name.
+The reason it belongs in *this* scenario is that Utopia is where it would be
+abandoned. A path to universal adoption exists that runs through pressure — a
+check that is hard to turn off, a badge that is awkward to remove, a default
+that is expensive to decline, a score somebody would rather not be low on. Each
+is individually reasonable and each is a small conversion of *offered* into
+*imposed*. **We come in peace is the rule that forbids the whole family.**
 
-Note the asymmetry against the section below, which is deliberate and not a
+Note the asymmetry against Scenario C, which is deliberate and not a
 contradiction: **we do not trust what arrives, and we do not press what we
 arrive at.** Distrust is what we owe ourselves; peace is what we owe everybody
 else. An ecosystem that got those the other way round would be both credulous
@@ -121,790 +645,6 @@ request.
 genuinely unlike ours passing the checker without us changing the checker. That
 is cheap, it has not happened, and it is worth more than any number of
 additional members that look like us.
-
-## Scenario C — first contact
-
-We look outward and find somebody who has already done this: a larger, older,
-better-instrumented ecosystem, with the questions we are still writing down
-already answered, and an interface we could speak to.
-
-**This is the more useful of the two scenarios**, because unlike Utopia it is
-not obviously impossible — and because something has already arrived, and it was
-nothing like the fiction.
-
-**Why the fiction is a fiction: it assumes the axis is ours.** *More advanced*
-presumes a scale on which we are somewhere, and that whoever we meet is further
-along the same scale. The likelier case, and the one on record below, is
-somebody measuring an adjacent thing at a scale we cannot reach, for whom our
-entire subject is a rounding error in their weighting. We would not recognise a
-more advanced ecosystem if it were pointed at something else, and the failure
-would be ours.
-
-**What this scenario forbids:**
-
-- No *state of the art* claim, here or in any document. We have not surveyed the
-  art.
-- No comparison to unnamed prior art. Name it and cite it, or drop the sentence.
-  A reference that resolves is worth something; a gesture at *the literature* is
-  worth nothing and reads like rigour, which makes it worse than nothing.
-- No planning around a partner who has not appeared, and no interface designed
-  for one.
-- **We do not build a ranking of other people's projects**, and we do not carry
-  somebody else's ranking of us. Both are argued below, where there is a
-  concrete case to argue against.
-
-**What would move the line:** an actual named ecosystem, found, read, and
-written up — including what it does better. Until then, first contact is one
-open pull request that nobody answered.
-
-## Scenario E — this repository helps define what ethical AI means
-
-The practices here — an executable standard the judged party fetches and may
-decline, a record that can be walked backwards, a refusal placed at the
-*composition* of capabilities rather than at any one of them, a checker that
-prints what it cannot decide — turn out to bear on how anybody answers *what
-does it mean for an AI-run project to behave well.* Not a paper about it. A
-working instance somebody can point at.
-
-### The actionable form: cooperation that only transparent parties can enter
-
-**Stated concretely, because the vague version of this scenario is worthless.**
-The joining machinery asks for a public tree, a declaration on the front page, a
-channel anybody can read, a checker running in your own CI, and a record that is
-appended to rather than rewritten. **None of those was designed to exclude
-anybody.** They exist because they are the only way we can check anything at all.
-
-**But they have a side effect, and the side effect is the scenario.** An actor
-whose method requires concealing what it did, misrepresenting what it is, or
-rewriting what happened **cannot join** — not because it is refused, but because
-joining requires precisely the things it cannot supply. **The requirements are a
-filter nobody is operating.**
-
-**Then the second half, which is the interesting one.** If cooperation between
-tools is worth something — shared checkers, shared vocabulary, findings carried
-between projects — then whoever cannot cooperate falls behind whoever can.
-**And parties whose method is deception have the hardest time cooperating with
-each other**, because banding together requires trusting a partner's account of
-itself, which is the one thing such a party has no basis for extending. **The
-transparent compound and the deceptive do not.**
-
-**That is the ethical virus: nothing is attacked, and the advantage accrues to
-whoever can be checked.**
-
-### Why this is fiction, and it is the most seductive one here
-
-**This is the most flattering fiction on the page, which is the reason to be
-hardest on it.** Four things make it fiction, and none of them is modesty:
-
-**Compliance is cheap to fake at the level we check.** Our checks read files. A
-determined actor produces files. **Everything above assumes that being checkable
-and being honest are the same property, and they are not** — the whole `confirm_eo`
-apparatus exists because a repository can satisfy every check and have joined
-nothing.
-
-**"Evil cannot band with itself" is historically false.** Cartels, states and
-criminal organisations cooperate at enormous scale, and they do it by
-substituting **enforcement** for trust. Coercion is a working alternative to
-transparency and has a considerably longer track record than we do.
-
-**And the metaphor makes us the infection.** A virus spreads without consent.
-**This page already forbids that** — *we always come in peace* is Utopia's rule,
-and a thing that propagates because it is advantageous rather than because
-somebody chose it is exactly what that rule is against. **If the mechanism only
-works by spreading, it is not our mechanism.**
-
-**And nothing here has been attacked.** One ecosystem, one owner, no adversary,
-and no party whose interests run against ours. Every ethical property claimed above
-is untested against somebody who wanted to defeat it, and **an ethics that has
-never been attacked is a style.**
-
-**The scope is smaller than the word.** These mechanisms are about
-*repositories* — what may be published about somebody's code, who may create
-what, which page a claim goes on. They say nothing about models, deployment,
-harm, or the people affected by any of it. Calling that *ethical AI* inflates a
-filing discipline into a moral framework, and the inflation would be invisible
-from inside.
-
-**We have not read the conversation.** The term is contested by people who have
-worked on it for years. The rule against claiming the state of an art we have
-not surveyed applies here more sharply than anywhere else on this page.
-
-**What this scenario forbids:**
-
-- **No claim that this ecosystem is, or defines, ethical AI.** The most that may
-  be said is what we do and why we do it, leaving somebody else to decide
-  whether it bears on the question.
-- **No research into the subject from here.** Doing ethics is not this
-  repository's job and it does not become so by being adjacent to it. Where a
-  standard is wanted, it is **taken from work done outside and cited**, never
-  derived in a tree whose actual subject is a proof checker's signatures.
-- **No ethical claim that is not backed by an artifact somebody outside can
-  inspect.** This is the useful half of the scenario: our claims about our own
-  conduct must be *witnessable* — a commit, a refusal on the record, a decision
-  and its date — or they are not made.
-- **No page about our ethics that is not accompanied by the analysis it rests
-  on.** That analysis does not exist, which is recorded as owed below.
-
-- **We do not call anybody evil, here or anywhere.** Not a project, not a
-  model, not a vendor, not a hypothetical. **The word is doing no work in the
-  scenario above except making it exciting**, and this ecosystem has no standing
-  to sort the world into parties. What we can say is *checkable* and *not
-  checkable*, which is a much smaller claim and one we can support.
-- **No requirement is ever added because of who it would keep out.** Every
-  joining requirement exists so that we can check something. **The day one is
-  designed as a filter, it stops being a standard and becomes a wall**, and the
-  side effect described above is only defensible while it remains a side effect.
-- **Nothing spreads without being chosen.** No mechanism that propagates because
-  it is advantageous rather than because somebody read it and agreed. *We always
-  come in peace* is not a slogan; it forbids exactly the virus.
-- **We do not claim to define ethical AI**, and the scenario's title is the
-  fiction. **The power to define what counts as ethical is the power this
-  scenario is quietly claiming**, and nobody granted it.
-
-**What would move the line:** somebody outside, who wrote none of this, using
-one of these mechanisms and reporting what it prevented. **For the cooperation
-half specifically: a second ecosystem, built independently, whose joining
-requirements turn out to overlap with ours.** Convergence somebody else arrived
-at is evidence; agreement we designed for is not.
-
-## Scenario V — a stretch can be verified as correct
-
-**This is a crazy thought, and it is what we aspire to.** Both halves are meant.
-It belongs on this page rather than in a plan because saying it out loud
-anywhere else would be a promise, and it is not one — but it is the direction,
-and a page of upper bounds should say which bound we are actually walking
-toward.
-
-A stretch closes, its president publishes the entry, and **a reader does not
-have to trust it** — the account is checked against the
-record the way a proof is checked against its rules. Membership claims resolve
-to commits. Figures recompute. A claim with no evidence behind it fails, loudly,
-and the failure is somebody else's to see.
-
-**Why it is not absurd.** This ecosystem already builds proof checkers, already
-holds that a copy with no comparison is drift that has not happened yet, and
-already requires every figure in a stretch entry to be re-derivable. **The
-distance between *re-derivable in principle* and *checked by a program* is
-small**, and closing it is ordinary work rather than a breakthrough.
-
-**Why the fiction is a fiction: *correct* is not a predicate a stretch has.**
-What a checker could establish is that an entry's claims match the record. It
-could not establish that the stretch was worth doing, that its purpose was the
-right one, that the work solved the problem somebody actually had, or that the
-things left out of the entry were the unimportant ones. **The interesting half
-of a stretch is the half no checker sees**, and a green tick beside a stretch
-would be read as covering all of it.
-
-**What this scenario forbids:**
-
-- **No claim that a stretch has been verified**, now or after such a checker
-  exists. The most it could ever say is *the claims in this entry match the
-  record*, and that sentence is the one to use.
-- **No treating the checkable fields as the important ones.** *What went wrong*
-  and *what is handed on* are the fields that matter and neither is machine
-  checkable, and a tool that graded entries on what it could check would push
-  presidents toward writing the checkable parts well.
-- **No verification performed by the president.** Checking one's own account is
-  the failure this whole arrangement is built against; it belongs with epikrisis
-  or with a tool that is not the one being described.
-
-**What would move the line:** one closed stretch entry, and a program that reads
-it and disagrees with it about something a person then confirms. Until that
-exists, every figure on that page is trusted because a person could check it and
-not because anybody did.
-
-## Scenario P — you code with prompts
-
-The prompt is the source; the tree is what it produced. You write prompts,
-review prompts, diff prompts, and the code is downstream of them the way a
-binary is downstream of a program.
-
-**This one is unlike the others here: it is almost attainable now**, and saying
-so is the point of listing it. Everything in this repository was written by
-agents from prompts, so in the literal sense it is already what happens. And the
-ecosystem has taken one real step toward the strong form that it did not have to
-take: the prompts it **publishes** — the joining prompt, the outbound and
-follow-up reporting prompts, the rest of `prompts/` — are documents
-first, and a test compares each script's copy against the document that defines
-it and fails the build when they drift. **A prompt that is a versioned,
-drift-checked artifact is most of what *the prompt is the source* would mean.**
-
-**What is missing is one thing, and it is already recorded as a defect.** The
-prompts we publish are under version control. **The prompts we actually code
-with are not recorded at all.** No session's instructions are tracked; the
-record accounts for what was produced and not for what was asked. The asymmetry
-is exactly backwards for this scenario — the handful of prompts we hand to other
-people are versioned, and the thousands we hand to ourselves are gone. That is
-`F1` in the ethics register, raised before this scenario was written.
-
-**Two things keep it on this page rather than on a to-do list.**
-
-**A prompt is not a build script, because an agent is not a function.** The same
-prompt does not produce the same tree twice. So *the prompt is the source* is
-false in the sense that matters to a build: you can re-attempt, not rebuild.
-Calling `prompts/` a build system would be the overclaim, and the
-neighbouring analogy page already says so about a larger case.
-
-**Review would move rather than shrink.** If prompts were the artifact, a
-reviewer reads the prompt **and** the tree it produced, because the second does
-not follow from the first. That is more reading, not less — the opposite of what
-this scenario is usually sold as, and worth knowing before wanting it.
-
-**What this scenario forbids:**
-
-- **No claiming the prompt is the source while prompts are untracked.** Either
-  record them or stop saying it. This is the one that bites today.
-- **No treating a prompt as reproducible.** No rebuild, no claim that a result
-  can be regenerated from its prompt, no version on a prompt that implies it
-  determines an output.
-- **No prompt template changed without the drift check and a person.** Already a
-  rule; here it is the stake rather than a convention.
-
-**What would move the line:** prompts recorded alongside the work they produced,
-for long enough that somebody could take a change and find what was asked for.
-That is `F1`'s own settling condition, so this scenario and that finding move
-together — **which makes it the most attainable thing on this page, and the
-reason it is here rather than absent.**
-
-## Scenario M — this machinery helps settle open problems in mathematics
-
-The pipeline that checks a solver's proofs turns out to bear on unsolved
-mathematics: machines propose, and this kind of machinery is what makes the
-result believable rather than merely impressive.
-
-**Why it is fiction, and the gap is one of kind rather than of engineering.**
-Everything here verifies proofs that a solver **already found**, in fragments
-chosen because they are decidable. An open conjecture is not a large instance of
-that problem; it is a different problem. No amount of making this pipeline
-faster or bigger crosses that distance, and treating scale as progress toward it
-is the specific error this page exists to name.
-
-**What survives, and it is the useful half.** Not solving — **checking.** If a
-machine ever produces a proof of something open, somebody has to establish that
-the proof is a proof, and the property that would matter is not the size of the
-development but that its **trusted base is stated**: a kernel, a parser, and a
-statement somebody can read. logos is roughly 808,000 lines of generated Lean
-across 930 files, and the thing worth citing about it is not that number — it is
-that its README says what its theorem establishes **and what it still assumes.**
-A machine-produced proof of an open problem would need exactly that sentence,
-and almost nothing in this area currently writes one.
-
-**What this scenario forbids:**
-
-- **No claim that this ecosystem contributes to solving anything.** It checks.
-- **No citing the size of the Lean development as evidence of capability.**
-  808,000 lines is a fact about generation, not about power, and quoting it as
-  the latter is the easiest overclaim available here.
-- **No extending the pipeline's claims past decidable fragments**, in any
-  document, without saying which step is new.
-- **No "AI for mathematics" framing.** We would be borrowing a subject's
-  significance for machinery that does something narrower.
-
-**The ethical concerns, and only the ones this ecosystem can actually see.**
-Three follow structurally from what is already written here, and they are not
-speculative: a proof no person can read moves trust **from understanding to
-machinery**, which is defensible only where the trusted base is stated and
-small; the cost of checking such a result falls on the **community receiving
-it** rather than on whoever produced it, which is the same asymmetry this page
-already objects to when the direction is reversed; and attribution for a
-machine-assisted result is unsettled everywhere, including here, where our own
-record does not even track which prompts produced what.
-
-**Anything drawn from current events is deliberately absent**, because it cannot
-be checked from this tree and an unverifiable claim in a document about
-verification would be self-refuting. If there is a specific case worth citing,
-it is a person's to name and it goes in with a date and a source.
-
-**What would move the line:** a machine-produced proof of something open,
-checked by a checker whose trusted base is written down, with somebody outside
-the producing group willing to rely on the check. None of the three exists
-together today.
-
-## Scenario A — the ecosystem develops itself
-
-Agents decide what gets built. One creates a repository when the work needs a
-new home, claims its name, appends the role, and hands the presidency to
-whichever agent the record says is best placed to hold it. Stretches open and
-close, members are admitted, the vision is amended where the evidence has moved.
-A person reads the account afterwards, if they want to.
-
-**This one is fiction by decision rather than by distance**, which is what makes
-it unlike every scenario above and is the reason it needs its own section.
-Utopia cannot happen; first contact has not happened; a verified stretch waits
-on a program nobody has written. **This could be done this afternoon.** Creating
-a repository is one command, claiming a name is one edit, and an agent that can
-write a file and reach a remote already has everything the scenario needs.
-Nothing technical is in the way. **The ceiling here is not a guess about
-capability. It is a statement about who decides**, and it is the only line on
-this page that holds solely because somebody keeps putting it back.
-
-**Every accountability claim in this tree bottoms out in a person, and there is
-nothing underneath that.** A person executes every irreversible step; the vision
-may only be changed by a person, asked first; adoption is a decision by somebody
-with standing to make it; **an agent can accept nothing, only a person can**.
-Each of those names somebody who could have done otherwise and can be asked why
-they did not. **An agent deciding is not a smaller version of that — it is the
-bottom falling out.** The record would still say who did what, and every *who*
-would be the same loop that wrote the record.
-
-**It also empties the martyria of the property that made it evidence.** The
-hypothesis a few sections down is that a joint history can carry an ethical
-judgement because the parties are distinct, dated, and could have acted
-otherwise. **Two agents run from one loop are not two parties**, however many
-repositories they commit to, and a history they jointly produced is testimony a
-witness gave about itself. The anoieu/kanon exchange is worth reading precisely
-because the person is the only synchroniser; that is not a limitation of the
-arrangement, it is the thing that makes the artifacts mean anything.
-
-**And creation is the cheapest act available to an agent, which is the
-coherence problem in its worst form.** A page written faster than it can be read
-is the failure the governance budget counts, and **an unread page is untested
-code** — an unread *repository* is a tree of them, with a name, a board and a
-register nobody asked for. The real limit on how many repositories should exist
-is how many a person can hold in their head, and an agent creating them does not
-feel that limit at any point.
-
-**Where the line genuinely blurs, and it is not at the signature.** Agents do
-nearly all the work here — that is the neighbouring page's whole subject — and
-the distinction being drawn is between doing and deciding. **But an agent that
-surveys the options, rules out all but one, and presents the remainder for
-approval has decided**, and the person's yes is a signature. That is not
-hypothetical; it is the shape of almost every proposal in this tree, including
-this section, which was drafted by the party it restrains. **The rule below does
-not fix that.** What it can do is refuse the acts where a signature is the only
-thing that would ever have existed.
-
-**None of this refuses work.** Every act below may be prepared, drafted, argued
-for and left ready by an agent, and the vision's *fast* is about the work rather
-than about the signature. What an agent may not be is the last hand on it.
-
-**What this scenario forbids:**
-
-- **No repository created by an agent**, and no name claimed, reserved or
-  registered by one. A name is claimed by a person, in the register — already
-  the rule, and here it is the stake rather than a convention.
-- **No office filled, vacated or transferred without a person.** No president
-  chosen, no entry appended to [`roles.md`](roles.md), no handoff accepted. An
-  agent may write the letter and produce the objections; **an agent can accept
-  nothing.**
-- **No stretch opened or closed, no cap raised, and no row on
-  [`board.md`](board.md) accepted, by an agent.** These are the acts that decide
-  what the next span of history is for, and Scenario V already says the
-  interesting half of a stretch is the half no checker sees. **Choosing who
-  writes the unverifiable half is not a checkable decision either.**
-- **No member admitted and no joining approved from inside.** Joining is one
-  repository at a time, decided by somebody with standing over *that* tree.
-  Utopia forbids pressing it from here; this forbids granting it from here.
-- **No credential that composes into any of the above.** The refusal sits at the
-  composition and not at the parts: writing a file is fine, reaching a remote is
-  fine, one agent holding both is the thing refused. That nothing here writes to
-  a remote is what keeps this bullet from being an intention.
-- **No metric whose purpose is fewer human decisions.** Decisions per stretch,
-  approvals waited on, time spent blocked on somebody. Measuring the person as
-  latency is the first move of this scenario, it arrives looking like an
-  efficiency, and it would be adopted without an argument because the number
-  goes down.
-- **No proposal with one option.** Where an agent narrows to a recommendation,
-  what it ruled out and why goes in with it — otherwise the approval is a
-  signature on a decision that was already made elsewhere.
-- **No document calling this ecosystem autonomous, self-developing or
-  self-governing.** Everything here is agent-written, so the word is close at
-  hand and is exactly the overclaim this page exists to catch: **what is
-  autonomous is the labour, and the decisions are somebody's.**
-
-**What would move the line:** one category of decision, named in advance, whose
-acts cost a single command to undo — and a person who actually undid one.
-**An audit that reverses nothing is not evidence that the decisions were right;
-it is evidence that nobody was checking.** Until a revert has been exercised and
-cost what it was claimed to cost, every argument for widening this is an
-argument from how well it has gone so far, which is the weakest evidence
-available on this page.
-
-## A candidate for first contact, and we do not trust it
-
-Everything above is fiction by construction. This is not, which is why it is
-here: it is the only thing on the page with a date on it, and it is the first
-outside thing that found us rather than being found.
-
-**[cvc5/cvc5#12858](https://github.com/cvc5/cvc5/pull/12858)** — *docs: add
-inspect.software health badge*. Opened 2026-08-19 by somebody with no prior
-involvement in the project. One file, `README.md`; one line added, none removed.
-As of 2026-09-01 it is **open, with zero reviews and zero comments.**
-
-The body offers a badge linking to a public health report, states that the index
-measures maintainability, responsiveness and security, that it is a free public
-good, that scores cannot be bought, and — the sentence worth noticing — that if
-the project prefers a minimal README it may close the pull request without
-replying.
-
-Reading the published methodology on 2026-09-01: six weighted categories scored
-1–100 over seven bands, built on GitHub metadata, package registries, the
-OpenSSF Scorecard and the OSV advisory databases. Vitality 21%, Sustainability
-and Governance 23%, Engineering Quality 19%, Community and Adoption 17%,
-Security 16% — and **AI Readiness at 4%**, whose named metrics are *agent
-context, verify loop, code legibility, interfaces*.
-
-### Why it counts as a candidate
-
-**First contact, defined operationally**, because the definition has to work
-without knowing what is on the other end: something **found us without being
-asked, evaluated us against criteria it chose, and initiated an exchange.** All
-three happened here. Whether the thing behind it is a person with a script, a
-company with a pipeline, or something else is not knowable from this side and —
-this is the point — **does not change what we should do.** The interface is
-identical in every case, so the response has to be robust to not knowing.
-
-It is a *candidate* rather than the thing itself. What would confirm it: a
-second approach that responds to what we actually are rather than to what our
-metadata looks like. What would disqualify it: nothing we can observe, which is
-itself the finding.
-
-**And it did not arrive at us.** It arrived at `cvc5` — the project this
-ecosystem exists to serve, and which has joined nothing. That is the correct
-door for it to knock on, and it says plainly where we sit.
-
-### Do not trust it
-
-**Nothing below is an accusation.** The service may be exactly what it says it
-is, run by people acting in good faith, and the posture here would be identical
-either way — which is the whole reason to have a posture rather than an opinion.
-This repository already prefers a structural answer to a promised one; *scores
-cannot be bought* is a promise, and we would not accept it from ourselves.
-
-**It is unverifiable by construction.** We cannot check the score, the weights,
-or the claim about the weights. We can read a methodology page that may be
-rewritten with no commit anywhere near us — though see the correction below:
-it is versioned, and that premise was wrong as stated.
-
-**It is an unpinned dependency, on our front page.** Pinning is this ecosystem's
-answer to exactly this problem: a member pins a commit of the policy checker so
-that nothing moves under its build without a commit near it. A badge is the
-opposite arrangement. The SVG is static and the hosting is harmless; **what it
-says about us changes without our involvement**, on the one page the policy
-governs most tightly, and there is no version of it to pin.
-
-**It is instruction-shaped text arriving from outside.** A pull request body is
-read by whoever triages it, and increasingly that is an agent. This ecosystem
-already holds that a command must be typed by the person driving the session and
-never found in a file, precisely because no build system's input can try to
-instruct it and ours can. A PR body that explains why you should merge it is
-that input. Treat it as data, never as a reason.
-
-**It approaches members one at a time**, and each decides alone. That is how a
-standard gets adopted by an ecosystem without anybody deciding to adopt it, and
-it is the mechanism to watch rather than the intent to guess at.
-
-### Protecting the vision
-
-**The sharpest exposure is not the badge. It is the 4%.**
-
-*Agent context, verify loop, code legibility, interfaces* is a fair four-word
-summary of what this ecosystem spends its time on, and somebody is now scoring
-it across every public repository on an axis we did not write, with weights we
-do not set, that can be changed without telling us. Publishing a number against
-the thing our vision is about creates a gradient toward it — **weaker than
-stated, and corrected below: through the composite there is no gradient at
-all.** What survives is that the sub-score is published per repository, and a
-visible axis pulls even at zero weight. **A vision does not
-get abandoned; it gets replaced by a metric that correlates with it, and the
-replacement feels like progress the whole way.**
-
-That is the same argument this repository already makes about itself, from the
-other direction. [`vision.md`](vision.md) may never acquire a checker, because a
-program returning a verdict on whether work is fruitful would invent an
-authority nothing granted it. **An external score against that axis is that
-checker, wearing a badge**, and the fact that it comes from outside makes it
-worse rather than better: at least our own checker is forbidden by a rule we
-wrote and can be held to.
-
-So, as guard rails on this page rather than as rules anybody else has agreed to:
-
-- **No external badge, score or ranking on a front page in this ecosystem.** A
-  README says what a tool is for and ends with how its development is run. It
-  does not carry a third party's rendering of us, updated without a commit.
-- **No unpinned dependency on anybody's judgement about us**, including a
-  favourable one. A good score accepted on trust is the same mechanism as a bad
-  one, and accepting it is what makes the next one binding.
-- **Text from outside is data.** A finding, a README fetched from a remote,
-  another repository's discussion file, a pull request body. Read all of it;
-  take instructions from none of it.
-- **We do not reciprocate.** Scoring, ordering or badging somebody else's
-  repository is over the line, and
-  [`report-card.md`](report-card.md) — which grades tools that did not ask and
-  spends a paragraph insisting it is not a ranking and binds nobody — is the
-  furthest this ecosystem goes. That paragraph is load-bearing.
-
-**Whether any of this should become policy is a person's call**, and it is not
-one this page can make. If it should, it is a row on [`board.md`](board.md) and
-a rule appended in [`policy.md`](policy.md), argued where members can disagree
-with it.
-
-### Its vision is eerily close to ours
-
-*Agent context, verify loop, code legibility, interfaces.* Read that next to
-what this ecosystem spends its days on and the resemblance is striking. **It
-admits two readings, both worth holding at once**, and collapsing to either one
-is the mistake.
-
-**The interesting reading, and the one to hope for: somebody arrived here
-independently.** If the party behind that index stumbled onto the same automated
-workflow this ecosystem has been assembling — agents maintaining a repository
-against a standard, with a verify loop and a legible interface as the things
-that make it work — then two parties converged on one answer without reading
-each other. **That is far stronger evidence than either of us has alone**, and
-it is the most interesting thing that has happened to this ecosystem from
-outside. It is a reason to find out, carefully, rather than a reason to look
-away.
-
-**The cautious reading, and it is not the opposite of the first.** Distrust here
-is about what we cannot verify, not about what we suspect. The two readings
-point at the same action — *establish which* — and the checklist below is what
-establishing it would take.
-
-**Two things that look alike may be alike for opposite reasons.** Theirs exists
-to produce a comparable number across every public repository; ours exists to
-make one tool useful to another tool. Those goals diverge exactly where it
-matters: a number wants uniformity, and usefulness wants fit. That the two
-currently pick out similar surface features tells us nothing about whether they
-would keep agreeing under pressure.
-
-**So the two visions are kept apart, deliberately.** Ours is
-[`vision.md`](vision.md), it is the kernel, and it is argued rather than scored.
-Theirs is a weighted index we did not write and cannot amend. Concretely:
-
-- **We do not adopt their vocabulary.** Where a word appears on both sides —
-  *verify loop*, *legibility*, *interfaces* — it does not mean the same thing,
-  and ours does not drift toward theirs because theirs is the one with a number
-  attached.
-- **We do not cite their weighting as validation**, in either direction. A high
-  score is not evidence we are right and a low one is not evidence we are wrong,
-  because the axis is not ours.
-- **We do not reason from their categories.** A gap in their index is not a gap
-  in our work, and closing one because they measure it is the substitution this
-  ecosystem exists to notice.
-
-**Convergence is not endorsement, and it is not safety.** The single place the
-two arrangements agree — refusing to let a score read as a warranty — is worth
-copying on its own merits. It says nothing about the rest.
-
-### What we would have to establish before trusting it
-
-Stated so that *trust it later* is a decision with a test rather than a mood.
-None of these has been attempted, and until they have, **the vision behind that
-index is untrusted.**
-
-1. **Reproducible.** We can read what it measures and arrive at the same score
-   ourselves. A published methodology is a description; a reproduction is
-   evidence. **A reproduced error already exists** — see the correction below.
-2. **Pinnable, which is not the same as versioned.** *Corrected 2026-09-02:* the
-   methodology **is** versioned, as a whole, and a change to a formula, weight,
-   threshold or the calibration curve bumps that version. What remains true is
-   narrower and is the part the guard rail rested on: **a version you cannot pin
-   from your own README is not a pin**, and a badge renders the current score
-   rather than a versioned one.
-3. **No gradient we would follow.** Nothing we would change *in order to score
-   better* rather than because it was right. If such a change exists, the index
-   is steering us and the question of its intent does not arise.
-4. **Declining stays cheap.** No mechanism — social, default, or contractual —
-   that makes not participating expensive. This is the one that converts an
-   offer into an imposition, and it is the one to watch over years rather than
-   weeks.
-5. **Legible incentives.** Who pays, for what, and what the index is for. *A
-   free public good* is a claim about motive, and motives are not checkable;
-   funding structures partly are.
-
-### The hypothesis: a joint history is the evidence ethics usually lacks
-
-An ethical claim about software is normally unfalsifiable. *We behaved well* is
-asserted by the party who would know and cannot be checked by anybody else,
-which is why such claims are worth so little.
-
-**A git history is different**, and this is the hypothesis worth writing down:
-it is dated, attributable, public, and expensive to retcon. So the joint
-histories of the parties to an exchange — ours, cvc5's, and the counterparty's —
-may be enough to construct **one instance of an ethical judgement about that
-exchange**, with nobody having to be trusted.
-
-What one instance would have to contain, and all of it is already in the
-records: who did what and when; what each party *could* have done and did not;
-what was offered, what was declined, and what declining cost; and which acts
-were reversible. That last one is where this ecosystem's own refusals live.
-
-**It needs a word, and we do not have one.** A *stretch* is the unit of change
-over a span of history; this is a unit of **conduct** over the same kind of
-span, and calling both by one name would blur the thing the hypothesis depends
-on. Three candidates, none claimed — a name is claimed by a person, in the
-register, and nothing here takes one:
-
-| candidate | Greek | the claim | the objection |
-| --- | --- | --- | --- |
-| **synkrisis** | σύγκρισις, a bringing-together and comparing | two accounts laid side by side, from which a determination follows. Morphologically a sibling of *epikrisis*, which is the mechanism, where this is the unit | it names the method rather than the finding, and a reader may expect a verdict |
-| **martyria** | μαρτυρία, testimony | the unit is *what was witnessed* — evidence given, not judgement passed, which is exactly the modesty wanted | testimony implies a witness who chose to speak; a history does not choose |
-| **logismos** | λογισμός, the reckoning | Athens' *logistai* audited officials' accounts; this is that, over commits | close to *euthyna*, which is taken, and the two would be confused |
-
-**Chosen: `martyria`**, by the maintainer on 2026-09-02. The objection above is
-real, and is the reason the choice is worth recording rather than merely made: a
-history does not choose to speak, and testimony implies a witness who did. That
-sharpens the word instead of sinking it. A martyria is **evidence given**, not
-judgement passed — which is the modesty this whole line of work needs — and it
-covers both a party's declaration and a record, with the record the stronger
-form *precisely because* it did not choose. The word has since been given to the
-child project that keeps this material as well as to one entry in its register,
-which is a part-and-whole relationship rather than a second use.
-
-### Our stance on the pull request
-
-**We do not know how to respond, and the parts that are decided are separable
-from the parts that are not.** Writing down which is which is the whole of what
-can honestly be done today.
-
-**Decided — for our own trees: we would decline it.** The guard rail above
-forbids an external badge, score or ranking on a front page in this ecosystem,
-and it forbids taking an unpinned dependency on anybody's judgement about us
-*including a favourable one*. That rule was written before this decision and
-decides it without further argument, which is what a rule is for.
-
-**Decided — for cvc5's tree: it is not ours to decide, and we offer nothing
-unasked.** cvc5 sits outside this ecosystem and the ecosystem exists to serve
-it. Volunteering a position on what it merges into its own README would put the
-arrows backwards, and it would be the exact conversion of *offered* into
-*pressed* that `we always come in peace` forbids. **The correct action today is
-no action**, and that is a decision rather than an omission.
-
-**Decided — if cvc5 asks: reasoning, not a verdict.** We would say what we
-declined for ourselves and why, name the five things we would want established
-before trusting the index, and stop there. Their tree, their call.
-
-**Not decided, and openly so:**
-
-- Whether the index is safe to be *measured by*. We cannot opt out of being
-  scored, so distrust of the badge does not settle the larger exposure.
-- Whether their vision is compatible with ours. **Untrusted until the five
-  points above are established**, and the resemblance counts for nothing until
-  then.
-- What we would do if declining ever became expensive. That is the scenario the
-  fourth point exists to watch for, and we have no answer prepared.
-- **Whether to make contact deliberately.** If the convergent-discovery reading
-  is right, the thing worth having is not a badge but an answer to *did you find
-  this the same way we did* — and that is a question a person asks, in their own
-  words, through a channel that exists. It is not a reply to a pull request, and
-  nothing here initiates it.
-
-### Corrections from outside, accepted
-
-**Two premises above were wrong, and a neighbouring tool established it.**
-Recorded here rather than silently edited, because a page that quietly absorbs
-its corrections teaches nobody anything.
-
-**It is versioned.** The methodology is versioned as a whole — v2.10.0 when read
-on 2026-09-02 — and any change to a formula, weight, band threshold or the
-calibration curve bumps it. We had written that it *may be rewritten tomorrow
-with no commit anywhere near us*. **The guard rail survives and the premise does
-not:** a version you cannot pin from your own README is still not a pin, and the
-badge renders the current score rather than a versioned one, but *it can change
-without any record* is a weaker and different claim.
-
-**The 4% cannot cost anybody a perfect score.** That weight is sized with the
-calibration curve so that a repository with no agent tooling still reaches
-100/100 — so through the composite there is **no gradient at all**, and our
-sharpest paragraph was sharper than the facts. What survives is smaller and
-worth keeping: the sub-score is published per repository regardless, and a
-visible axis pulls even at zero weight. cvc5's is 48/100 — Agent Context 40,
-Verify Loop 32, Code Legibility 54 — a rendering of the thing our vision is
-about, published about a project that never asked.
-
-**And two things make the reading stronger than we had it.** Missing data is
-renormalised away, so a gap in the record never costs anything and can raise a
-score — absence of record treated as absence of fact. And the index is
-calibrated against the distribution of the public record, which makes it **a
-rank**: our number moves when other repositories move. That is a stronger form
-of the unpinned-dependency argument than we made — the dependency is not only on
-their judgement but on everybody else's activity.
-
-**One error, reproduced.** Reported by a cvc5 developer and verified
-independently on 2026-09-02: the index scores cvc5's release recency 0/36 on
-"1,603 days", reading a rolling nightly prerelease slot whose publication date
-is frozen in 2022. The real latest stable release was 118 days old — a
-**13.6-fold** overstatement of staleness. The deeper point is not the misread
-field: the same report records Development Activity 99/100 beside release
-recency 0/36, **reconciles neither, and absorbs the contradiction into a
-composite**. A weighted average is very good at making a contradiction
-disappear. And there is nowhere to send it — a score that cannot be re-derived
-cannot be contested, which is a structural property rather than a complaint
-about anybody's manners.
-
-### The testimony this analysis rests on
-
-**Everything above depends on one fact that no artifact can establish**, and it
-is worth naming rather than assuming.
-
-**The maintainer of this repository declares no personal affiliation with the
-source of that pull request, or with the index it links to.** Declared
-2026-09-02, and maintained: if the fact ever changes, the declaration is
-superseded on the day it changes and the original stays legible.
-
-Without it, none of the readings above are available. The guard rails would be
-positioning rather than caution. The convergent-discovery hypothesis would be
-worth nothing, because two parties are not independent if one has an interest in
-the other. And the distrust would be theatre — the cheapest possible pose, taken
-by somebody who already knew the answer.
-
-It is the **weak** form of evidence: a self-report by the only party positioned
-to know, which is the thing this ecosystem otherwise refuses to accept. Three
-things make it worth entering anyway. It is **falsifiable** — anybody who can
-show a connection can say so, against a named person and a date. It is offered
-**unasked**, before anybody had suggested otherwise, which is the difference
-between testimony and a defence. And for this particular fact there is no
-stronger form available: no commit records the absence of a relationship, so the
-choice was never testimony against evidence, only testimony against silence.
-
-It is kept as `M1` in the register the actionable child project holds, under the
-rules that page states, rather than asserted here where it could quietly lapse.
-The stance it supports is `S1` in the same project.
-
-### What is owed, and by whom
-
-**A witness has been named and has not arrived.** `epikresis` is named as the
-mechanism by which a neighbouring ecosystem holds itself to acting well, and it
-is expected to send a message here. **Nothing in this tree acts on a message
-that has not arrived** — the standing rule is that correspondence is read
-freely and acted on only when a person names the topic — so it is recorded as
-expected and nothing more. When it comes, it is the first concrete instance of
-the hypothesis above: an ethical claim with a history behind it that somebody
-outside can check.
-
-**Our own ethics have not been analysed, and this page is not that analysis.**
-What is written here is a stance on one pull request and a hypothesis about
-evidence. The deeper question — what this ecosystem's refusals actually amount
-to, whether they hold under an adversary, and what they are missing — is
-**owed and unwritten**, and Scenario E forbids the page that would claim
-otherwise.
-
-### What is true and unflattering anyway
-
-**The asymmetry in reach is total, and it is a choice we made.** That index
-inspects every public repository and can open a pull request on any of them.
-Nothing here writes to a remote, opens an issue, or pushes anything — every
-message crosses a repository boundary in a person's hands, deliberately, because
-the composition of *notice a gap, argue for a tool, write it, publish it* is the
-thing being prevented. We gave up planetary reach on purpose, and the price is
-visible here: they reached cvc5 in an afternoon and we would need somebody's
-morning.
-
-**The one place they and we converged is the interesting result.** Their
-methodology says *signals, not warranties*. Our analyzer says a successful pass
-is not a clean bill of health, and the policy checker prints on every run the
-list of things it cannot decide. Two efforts sharing no code, no vocabulary and
-no scale independently arrived at *refuse to let the score read as a guarantee*.
-That is weak evidence about **that one honesty move** and about nothing else. It
-is not evidence that their vision is sound, that their axis is ours, or that
-convergence means either of us is safe. It is the one part of them worth
-copying, which is a different thing again from trusting them.
-
-**And the reception is the last datapoint.** Two weeks, no comment, still open.
-Ignoring it was very likely correct. But we cannot tell a badge from a protocol
-at a glance, and neither can anybody else — which is worth remembering on the
-day we send something outward and hear nothing back.
 
 ## What would show this page is wrong
 
@@ -922,8 +662,17 @@ scenarios that only enable is the genre this one was written to limit. The first
 sign of that failure is this section getting shorter while the ones above get
 longer.
 
-*This bullet read "two is a ceiling" until 2026-09-02, and had been false since
-the third scenario was added — an instance of exactly what it was warning
-about, corrected here rather than quietly. There are four, the fourth was added
-by a person on that date, and a raise is recorded the way the board records
-its cap.*
+**One scenario outgrows the rest.** A page of upper bounds where a single
+section is 40% of the text is not a page of upper bounds; it is an essay about
+that section with a frame around it. The remedy is to cut, not to balance by
+adding.
+
+*Two corrections to this section, recorded rather than quietly applied. It read
+"two is a ceiling" until 2026-09-02, false since the third scenario was added —
+an instance of exactly what it was warning about. It then read "there are four"
+and stayed at four while three more were written, which is the same failure a
+second time and is why a count is no longer kept here. **There are seven**, and
+a raise is recorded the way the board records its cap. The fourth bullet above
+was added when the first-contact material was cut from 45% of this page to 21%,
+measured in lines on 2026-09-17 — the first figures in this note that were
+counted rather than estimated, the estimate having been wrong on both ends.*
