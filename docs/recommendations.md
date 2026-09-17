@@ -36,8 +36,9 @@ argument, and it lives next door.**
 
 **It is the only page in this tree that proposes spending somebody's time**, and
 that makes it the one with the most to answer for. The review it draws on is
-[one pass by one agent](ai-novelty.md#the-reading), two of whose verdicts rest
-on a fetch-and-summarise tool. **A recommendation resting on a misread source is
+[one pass by one agent](ai-novelty.md#the-reading), one of whose verdicts rests
+on a fetch-and-summarise tool and on an absence, which is what that instrument
+is worst at establishing. **A recommendation resting on a misread source is
 worse than no recommendation**, because somebody may act on it.
 
 **Three of the six entries below are cheap enough that being wrong costs a
@@ -69,12 +70,13 @@ is.** That is the same argument as *a check whose expected result is `pass`
 carries no information when it passes*, with decades of formal treatment behind
 it.
 
-**The fact it collides with.** Running the checker against this tree on
-2026-09-17 reported **26 checks passing**, ten skipped with a reason each, and a
-further list it will never check. `tests/run.py` unit-tests the predicates in
-both directions, and the adoption interface builds 13 synthetic trees of which 8
-expect a non-zero exit. **What nobody can answer is which of the 26 has ever
-rejected anything.**
+**The fact it collides with.** Run against this tree at `154228a`, the commit
+this repository pins, the checker names **26 checks**, runs 18 of them here and
+passes all 18, skips 8 with a reason each, and lists a further 18 it cannot
+decide and one it never will. *(taken 2026-09-17.)* `tests/run.py` unit-tests
+the predicates in both directions, and the adoption interface builds 14 synthetic
+trees of which 8 expect a non-zero exit. **What nobody can answer is which of the
+26 has ever rejected anything.**
 
 **Why this ecosystem rather than any other.** The checker already prints what it
 cannot decide, which is the rarer half of this discipline and genuinely well
@@ -96,19 +98,25 @@ first attempt, in which case the cost was a day and the yield is a table.
 the register it describes. **Where:** anoieu, `tests/run.py` rather than
 `policy_check.py`. **State:** open, and a request rather than a tool.
 
-**The reading that produced it — and an incident, which this ecosystem asks for
-before it accepts a rule.** On 2026-09-17 this repository's front page, its
-document index and its maintenance note each asserted a countable fact about a
-table in a third file: that every comparison in the register read `unread`.
-**Filling the table made all three false without touching them**, nothing caught
-it, and a person did.
+**The reading that produced it — and two incidents, which this ecosystem asks
+for before it accepts a rule.** Dated 2026-09-17, in this tree: the front page,
+the document index and the maintenance note each asserted a countable fact about
+a table in a third file — that every comparison in the register read `unread` —
+and filling that table made all three false without any of them being touched.
+`ai-novelty.md` carried the same claim about the same table, in the same file as
+the table, and it went the same way.
+
+**Neither is findable by anything that runs here.** Both take somebody reading
+the file, and the second sat one screen from the table that contradicted it,
+which is the honest measure of how well reading covers this class.
 
 **It is a class the review already named and nobody guarded.** *[A sentence
 that became false without
 changing](ai-novelty.md#a-worked-example-moving-one-directory)* is the worked
 example next door, and the neighbouring classes are already checked — whole
-prompt bodies against the documents defining them, epoch command tables against
-the pages restating them. **Counted claims are the unguarded
+prompt bodies against the documents defining them, the dependency manifest
+against the corpus targets and the lock, the committed list of policy checks
+against the ones the checker registers. **Counted claims are the unguarded
 one, and unlike clarity they are decidable from the tree.**
 
 **Shape:** mark the claim rather than parse the sentence — a comment carrying

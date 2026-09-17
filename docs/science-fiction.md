@@ -327,13 +327,13 @@ written up — including what it does better.
 **Kept short deliberately.** This was once the longest section on the page, at
 which point a single unanswered pull request was outweighing every other
 scenario here — which is the failure mode the last section of this page names.
-It is one data point, it is two weeks of somebody else's automation, and it is
-sized accordingly now.
+It is one data point, it is one pull request from somebody else's automation,
+and it is sized accordingly now.
 
 **What happened.** [cvc5/cvc5#12858](https://github.com/cvc5/cvc5/pull/12858) —
 *docs: add inspect.software health badge*. Opened 2026-08-19 by somebody with no
-prior involvement, one line added to `README.md`, and as of 2026-09-01 open with
-zero reviews and zero comments. The body offers a badge linking to a public
+prior involvement, one line added to `README.md`, and as of 2026-09-17 still
+open, with zero reviews and zero comments. The body offers a badge linking to a public
 health report and says the project may close the pull request without replying.
 The published methodology, read 2026-09-02: six weighted categories scored
 1–100, built on public metadata, the OpenSSF Scorecard and OSV advisories —
@@ -431,10 +431,11 @@ interesting result** — their methodology says *signals, not warranties*, our
 checker prints on every run what it cannot decide, and two efforts sharing no
 code and no scale arrived independently at *refuse to let the score read as a
 guarantee*. That is weak evidence about **that one honesty move** and nothing
-else. **And the reception is the last datapoint:** two weeks, no comment, still
-open. Ignoring it was very likely correct — but we cannot tell a badge from a
-protocol at a glance, and neither can anybody else, which is worth remembering
-on the day we send something outward and hear nothing back.
+else. **And the reception is the last datapoint:** still open, with nothing said on
+it. *(read 2026-09-17.)* Ignoring it is very likely the right call — but we
+cannot tell a badge from a protocol at a glance, and neither can anybody else,
+which is worth remembering on the day we send something outward and hear
+nothing back.
 
 ## Scenario E — this repository helps define what ethical AI means
 

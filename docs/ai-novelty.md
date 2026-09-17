@@ -15,11 +15,11 @@ one, and it is the claim this page makes until a comparison shows otherwise.
 
 ## The state of this review
 
-**A first reading pass has happened and the survey is not finished.** On
-2026-09-17 ten works were opened and what they say was written down; before
-that date no entry on this page had been checked against anything. **The page is
-still one and a half halves of a comparison**, and saying which half is which is
-the only thing that keeps the title honest.
+**One reading pass stands behind this page, and the survey is not finished.**
+Nine entries carry a reading, dated 2026-09-17, and every other row rests on
+nothing but the derivation in its own section. **The page is still one and a
+half halves of a comparison**, and saying which half is which is the only thing
+that keeps the title honest.
 
 **What exists here today:** the ecosystem side, written up mechanism by
 mechanism; and [a reading log](#the-reading) recording, per work, what the
@@ -88,7 +88,7 @@ tried; that is the weaker and more useful claim, and it is the one being made.
 ## The register
 
 One row per mechanism. **The third column is the state of the comparison.** It
-read `unread` on every row until 2026-09-17; it now carries a verdict on six
+read `unread` on every row until 2026-09-17; it now carries a verdict on seven
 rows, a partial on two, and `unread` on one. **A row is only allowed off
 `unread` if the source was opened** — [the reading](#the-reading) says which
 ones were, and by what instrument.
@@ -106,26 +106,30 @@ ones were, and by what instrument.
 | [recording what produced a change, not only the change](#the-history-as-a-data-point-offered) | Nygard's Architecture Decision Records (2011); model cards and datasheets | **mostly ruled out.** ADRs are this, fifteen years earlier, including the append-only rule. The residue is the *required falsifier*, which no template asks for |
 | [a checker that prints what it cannot decide](#what-all-of-this-costs) | soundness/completeness in static analysis; model cards' *limitations* sections | partial — the undecidability argument is textbook; the *coverage gap with a reason per gap* is nearer a model card than an analyser |
 
-**The last column is the point of the page and it is no longer empty.** Seven
-of the ten rows carry an answer. **Six of those seven are downgrades** — five
+**The last column is the point of the page, and it carries answers.** Seven of
+the ten rows have one. **Six of those seven are downgrades** — five
 mechanisms cut to a residue and one closed outright — and the seventh is a
 pointer found to say the opposite of what the row claimed. **That is the outcome
 the page said to expect and the one it is worth having.**
 
 ## The reading
 
-**Ten works, opened on 2026-09-17, in one pass by one agent.** Each entry says
-what the source claims in its own terms first and what it did to a row second,
-because the other order is how a reading gets bent to fit the row it was sent to
-check.
+**Nine entries, opened on 2026-09-17, in one pass by one agent.** Each entry
+says what the source claims in its own terms first and what it did to a row
+second, because the other order is how a reading gets bent to fit the row it was
+sent to check.
 
-**The instrument is recorded per entry, because the instruments differ.** Six
-were read as primary text — the paper, the whitepaper, the original post. Two
-were read through a fetch-and-summarise tool, which is weak in one specific
-direction: **it is fair evidence that a source says something and poor evidence
-that a source says nothing.** Two were read only in secondary form. **Where a
-verdict below rests on an absence, it is marked, and it is the softest thing on
-this page.**
+**The instrument is recorded per entry, and the count is of entries rather than
+of works** — three entries carry more than one source, so any other unit makes
+the tally something a reader cannot check against the page. **Five rest on
+primary text** — the paper, the whitepaper, the original post — one of the five
+leaning on a secondary account of Knuth beside two sources read directly. **Two
+rest on secondary accounts alone**, and say so in their first line. **One rests
+on two specifications read only in part.** **And one rests on a
+fetch-and-summarise tool**, which is weak in one specific direction: **it is
+fair evidence that a source says something and poor evidence that a source says
+nothing.** **Where a verdict below rests on an absence, it is marked, and it is
+the softest thing on this page.**
 
 ### Multi-agent debate is the contrast case, not the prior art
 
@@ -535,7 +539,9 @@ the author.
 something that does not actually settle the point is worse than the derivation
 it replaced — a jump to a label that is not there — and it is harder to notice,
 because a citation *looks* like rigour. **This page is the sharpest instance of
-that risk in the tree**, which is why its register column reads `unread`.
+that risk in the tree**, which is why a row is allowed off `unread` only where
+the reading log says the source was opened, and why the four pointers that did
+not survive being opened are recorded as such rather than quietly replaced.
 
 **A citation is a reference; a paraphrase is a copy.** Copies are the thing this
 repository is most careful about — a prompt copied out of the document defining
@@ -631,16 +637,19 @@ account of the script — it is an account of something the script cannot contai
 
 What makes it more than a slogan is that the gap is **checked**. The test suite
 pulls the prompt out of the document that defines it, runs the script with
-`--show-prompt`, and compares whole bodies; the same comparison runs over the
-places that restate the epoch commands and statuses against the tables that
-define them. **Ground truth with copies and no comparison is the worst of the
-three arrangements, because it looks like the safe one.**
+`--show-prompt`, and compares whole bodies; the same shape of comparison holds
+the dependency manifest, the corpus targets and the lock to one another, and
+holds the committed list of policy checks to the ones the checker registers.
+**Ground truth with copies and no comparison is the worst of the three
+arrangements, because it looks like the safe one.**
 
-**Where it is not true yet, and this is the honest half.** The epoch system's
-commands are not parsed by any program. Nothing rejects a malformed one, nothing
-enforces a gate, and the role that holds the front end says so in its own entry.
-For that system the ground truth is currently a *document*, which is the
-arrangement this tenet exists to warn about. Naming it here does not fix it.
+**And this section has no instance of its own failure mode.** Nowhere in this
+ecosystem does a command surface have a document for its ground truth: what
+members run is the policy checker, the reporting loop and koine's shared
+tooling, each of which is a program with a comparison over it. **That is the
+weakest position a section like this can be in** — it asserts a discipline with
+nothing standing against it, so nothing here shows the discipline is doing any
+work. *(anoieu, kanon and koine read 2026-09-17.)*
 
 **How we relate, provisionally.** Executable specifications and doctests are the
 established form of *the document and the program must agree, and a test says
@@ -653,13 +662,12 @@ which is how this class of comparison usually dies quietly.
 
 ## The build system can be generalized, and has not been
 
-The concrete wish, stated as a wish because nothing has been built.
+The concrete wish, and the part of it that holds in somebody else's tree.
 
-**Today the epoch commands exist in one repository.** Reaching `staged` is
-something only that tree can currently do, because the machinery and the surface
-a person types at both live there. Every other member has the policy checker and
-the reporting loop and nothing else: no command line of its own, no staging
-step, no dry run.
+**No repository holds a command line over the ecosystem's own state**, and no
+member has a staging step or a dry run. What a member has is the policy checker,
+the reporting loop and whatever it writes for itself. *(anoieu, kanon and koine
+read 2026-09-17.)*
 
 **The wish is command-line tooling available to more tools in the ecosystem,
 coordinated in how it is deployed** by the principles already written down
@@ -691,8 +699,23 @@ that arrangement as a strength.**
 
 *What would show the generalization is real:* a second tree running one of these
 commands that it did not write, against its own state, and getting an answer its
-maintainer acted on. Nothing has done this. **A build system with one user is a
-script with ceremony.**
+maintainer acted on.
+
+**Three of the four hold, in a tree that is not ours.** koine keeps tooling on
+behalf of trees that do not want to maintain it, and two trees pin a commit of
+it and call it from their own runs: anoieu's analyzer hands its dump to koine's
+`koine_append_db` against a lock in its own `scripts/`, and dokimasia keeps the
+same arrangement. That is *one definition per command*, *pinned and fetched* and
+*each member chooses when*. **The claim that none of this exists is not
+available to this section.** *(koine, anoieu and dokimasia read 2026-09-17.)*
+
+**The fourth is the one missing, and it is the hard one.** There is no shared
+status vocabulary, so nothing makes an announcement from one tree comparable
+with one from another. And whether a maintainer *acted on* an answer is not
+visible from this tree, so the falsifier as written is not settleable here.
+**A build system with one user is a script with ceremony; a shared library two
+trees pin is not a build system either, and the distance between those two is
+what this section is asking for.**
 
 ## The artifacts are the channel
 
@@ -953,8 +976,8 @@ Writing an account of one's own mechanisms is exactly the activity that feels
 like progress and is not, and the sharpest criticism it has received from
 outside is that the quality of its self-criticism has been functioning as a
 substitute for the work rather than a spur to it. **That criticism still applies
-to this page**, and its measurable form has changed rather than gone: the third
-column is no longer empty, and **not one downgraded row has left the file**.
+to this page**, and its measurable form is right here: the third column carries
+seven answers, and **not one downgraded row has left the file**.
 
 **One reading, one tree, and the reader is the subject.** Everything above is
 drawn from this ecosystem, which is small, young, and mostly written by agents
@@ -964,8 +987,8 @@ the same ecosystem, in one sitting, with no outside reader at any point.**
 
 ## What would show this page is wrong
 
-**Three of these were written as predictions before any reading had been done.
-One pass has now happened, so each is marked with what it did.**
+**Three of these are predictions the page made about itself, and each is marked
+with what one reading pass did to it.**
 
 **The review never starts.** ~~The register's third column stays `unread` while
 the mechanism sections grow.~~ **Retired on 2026-09-17**: seven rows carry a
@@ -980,8 +1003,9 @@ cover.
 what the row claimed; the debate pointer is the contrast case rather than the
 prior art; Preston-Werner's reasons are not the row's reasons; and the artifacts
 row named four literatures, none of them the right one. **A pointer that
-survives contact with the source unchanged is the suspicious outcome** — and six
-of the ten works read did change the row that sent for them.
+survives contact with the source unchanged is the suspicious outcome** — and
+eight of the nine entries change the row that sent for them. The ninth confirms
+a prediction the row makes about itself.
 
 **Nothing gets downgraded.** **Did not happen, and that is the reassuring
 part.** Five rows shrank and one closed outright. **The new version of this
@@ -991,13 +1015,12 @@ is a downgrade nobody has to act on.**
 
 **And one failure this pass created that the page had not anticipated: the
 reading is done by the thing being reviewed, with the instruments it happens to
-have.** Two verdicts above rest on a fetch-and-summarise tool, one of them on an
-absence that instrument is bad at establishing. **Nobody outside has checked any
-of this, and a review of one's own novelty conducted entirely by oneself has the
-failure mode the whole page was written about.**
+have.** One verdict above rests on a fetch-and-summarise tool, and it rests on
+an absence, which is what that instrument is worst at establishing. **Nobody
+outside has checked any of this, and a review of one's own novelty conducted
+entirely by oneself has the failure mode this whole page is about.**
 
-*Two documents referenced by earlier versions of this page — `coherence.md`,
-which held the governance budget, and `linker.md`, which this page was once a
-companion to — no longer resolve in any tree in this ecosystem. Recorded here
-rather than silently dropped: the references were removed on 2026-09-17 and the
-pages they pointed at have not been located.*
+*Two documents this page has no link to — `coherence.md`, which holds the
+governance budget, and `linker.md`, its companion — resolve in no tree in this
+ecosystem. The retirement is recorded rather than silent so that a reader who
+finds either name elsewhere knows it is not here.*

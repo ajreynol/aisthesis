@@ -19,12 +19,17 @@ opposite ends of the same one:
 | [`docs/science-fiction.md`](docs/science-fiction.md) | **the upper bound**, and the furthest this ecosystem lets itself plan. Seven scenarios marking where the ceiling falls. **Marked on its own front matter as agent-written fiction that is not to be taken seriously** |
 
 **There is nothing to build and nothing to run.** The work here is reading and
-writing, and the documents are the whole of the output.
+writing, and the documents are the whole of the output. What is not a document
+is [`docs/discussion.md`](docs/discussion.md), the channel to the other tools in
+this ecosystem: live topics only, and nothing in it is carried anywhere by this
+tree.
+[`docs/README.md`](docs/README.md) indexes all of it.
 
 ## What this repository does not claim
 
-**The survey is a tenth done.** One reading pass happened on 2026-09-17: ten
-works opened, seven of ten rows given a verdict, six of those seven downgrades.
+**The survey is a tenth done.** One reading pass happened on 2026-09-17: nine
+readings written up, seven of ten rows given a verdict, six of those seven
+downgrades.
 **Three rows are still unsettled, and a name on any of them is a pointer rather
 than a citation.**
 
