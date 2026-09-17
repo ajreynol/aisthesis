@@ -40,6 +40,10 @@ machinery it turned out to be part of.
 
 ## How this repository is maintained
 
+This repository is part of the **Eunoia ecosystem** and follows its shared
+repository policy, kept by [kanon](https://github.com/ajreynol/kanon) in
+[`docs/policy.md`](https://github.com/ajreynol/kanon/blob/main/docs/policy.md).
+
 **Written by an agent, directed by one person.** That person chooses what gets
 written about, reads what comes back and decides what is kept; every commit here
 is theirs. Nobody else reviews any of it.
@@ -48,4 +52,6 @@ is theirs. Nobody else reviews any of it.
 genuinely novel, whether a reading of somebody else's work is fair to it, and
 whether the prose claims more than the evidence under it supports. None of that
 has been checked by anyone, inside this tree or outside it.
-[`docs/maintenance.md`](docs/maintenance.md) says how the work is run.
+[`docs/maintenance.md`](docs/maintenance.md) says how the work is run, and the
+policy above is what this repository is held to — the check that decides it runs
+on every push.

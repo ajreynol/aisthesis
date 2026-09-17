@@ -9,13 +9,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: the policy checker, at the commit this repository pins
         env:
-          # The checker this repository holds itself to. 6f9ee38 is the first
-          # commit whose scripts/policy_check.py knows the `associate` footing:
-          # everything earlier — including 87ad682, which kanon pins — has no
-          # `associate_in`, would read the marker on docs/maintenance.md as
-          # nothing at all, and would fail this tree for want of the front-page
-          # declaration the footing exists in order not to carry. Green at this
-          # commit across all 7 of anoieu's check runs, checked 2026-09-17.
+          # The checker this repository is held to. Chosen as the newest commit
+          # of the checker with a green build: all 7 of anoieu's check runs pass
+          # at 6f9ee38, verified 2026-09-17, which is the policy's requirement
+          # for moving a pin. kanon pins the older 87ad682; this tree is a member
+          # in its own right and picks its own commit.
+          #
+          # It was first pinned here for a reason that no longer applies: this
+          # repository carried the `associate` footing, and 6f9ee38 is the
+          # earliest revision whose policy_check.py knows that footing. The
+          # footing was dropped for full membership on 2026-09-17, so the pin now
+          # rests on being current and green rather than on that.
           ANOIEU_REV: 6f9ee38b3c142dce22458a5ba290c062b7899aa9
         run: |
           git clone --quiet https://github.com/ajreynol/anoieu /tmp/anoieu

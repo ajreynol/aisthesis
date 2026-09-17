@@ -31,18 +31,29 @@ every commit here is theirs. Nobody else reviews any of it, nothing here has
 been read against the literature, and the two documents say as much about
 themselves.
 
-## The footing
+## What this repository is held to
 
-**Footing:** `associate` — held to the Eunoia ecosystem's shared
-repository policy; the membership is deliberately not advertised.
-This repository holds itself to that policy by its own choice, and owes that
-ecosystem nothing: the obligation is one it imposes on itself and answers to by
-itself, and nobody here is owed it. It stays off the front page because this
-tree is not published, it is one person's working tree, and a declaration would
-oversell what is in it — two unfinished documents, which is too little to hang
-an announced arrangement on.
+**This repository is a member of the Eunoia ecosystem**, declared on the front
+page as the policy asks and backed by the check that runs on every push. That is
+the arrangement in one line: **the declaration and the check are one claim, and
+either alone is a failure.** A front page that says this and a tree that does
+not back it is the thing the check exists to prevent; a tree that would pass and
+says nothing has joined nothing.
 
-Because that is a claim somebody can check, the check runs and prints a result.
-What it prints is a measurement of this tree against the line above, and nothing
-else: a failure is nobody's fault, no note asks anyone to fix it, and it counts
-toward nothing.
+**What that costs, stated plainly because it is now owed rather than chosen.**
+This repository previously carried the `associate` footing — held to the same
+policy by its own choice, owing the ecosystem nothing, with the obligation
+recorded here instead of on the front page. **That is no longer the arrangement.**
+A member's failing check is a shortfall rather than a measurement, it is counted
+among the repositories that do not pass, and nobody here gets to say afterwards
+that it counted toward nothing.
+
+**The pin is the one lever.** [`.github/workflows/anoieu.yml`](../.github/workflows/anoieu.yml)
+names the commit of the checker this tree is measured against. Moving it is a
+commit here, it is this repository's decision and nobody else's, and it is only
+ever moved to a commit where the checker's own build is green.
+
+**What is not settled from this side.** The ecosystem's register in kanon
+records one footing per tool, and `aisthesis` has no entry in it and no name in
+the glossary. **Declaring is this repository's half; being recorded is kanon's**,
+and the second has not happened.
