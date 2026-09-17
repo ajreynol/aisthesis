@@ -40,7 +40,7 @@ and the ones at the bottom by distance.
 | [C](#scenario-c--first-contact) | first contact | has not happened; **one case with a date on it** |
 | [E](#scenario-e--this-repository-helps-define-what-ethical-ai-means) | this repository helps define what ethical AI means | the most flattering fiction here |
 | [M](#scenario-m--this-machinery-helps-settle-open-problems-in-mathematics) | settling open problems in mathematics | a gap of *kind*, not of engineering |
-| [U](#scenario-u--all-software-on-earth-joins-the-ecosystem) | all software on earth joins the ecosystem | **cannot happen**; it would be the mechanism failing |
+| [U](#scenario-u--all-software-on-earth-joins-common-ecosystem) | all software on earth joins a common ecosystem | **cannot happen**; it would be the mechanism failing |
 
 The frame comes first — [why this page contradicts the
 vision](#this-contradicts-the-vision-and-the-contradiction-is-real) and [what
@@ -580,7 +580,7 @@ checked by a checker whose trusted base is written down, with somebody outside
 the producing group willing to rely on the check. None of the three exists
 together today.
 
-## Scenario U — all software on earth joins the ecosystem
+## Scenario U — all software on earth joins a common ecosystem
 
 Every repository declares membership, runs the policy checker in its own CI,
 keeps a discussion file, and carries a board and a register of roles. One

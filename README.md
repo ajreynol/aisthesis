@@ -38,22 +38,6 @@ these documents keep, for free — an entry that comes to be understood is no
 longer aisthesis, so it leaves for the document that describes whatever
 machinery it turned out to be part of.
 
-**The name was argued for a weaker entry criterion than the one now in force.**
-It was recommended on the strength of *admitted because somebody watching
-thought that is strange*; the goal is now a literature review, which is a
-judging activity rather than a noticing one. **That is an argument against the
-name, recorded rather than smoothed over**, and it is the maintainer's to
-settle.
-
-**It is not about beauty.** English *aesthetic* descends from the word and a
-careless reader hears that instead; the sense meant here is the older and
-plainer one, sense-perception as against judgement.
-
-**The name is not registered.** It appears in neither of this ecosystem's
-registers — it was recommended once in a design log and never entered — so it is
-in use here and claimed nowhere. What scope it ought to carry was left an open
-question in that same log, and this page does not settle it.
-
 ## How this repository is maintained
 
 **Written by an agent, directed by one person.** That person chooses what gets
