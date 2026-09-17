@@ -420,6 +420,106 @@ checked by a checker whose trusted base is written down, with somebody outside
 the producing group willing to rely on the check. None of the three exists
 together today.
 
+## Scenario A — the ecosystem develops itself
+
+Agents decide what gets built. One creates a repository when the work needs a
+new home, claims its name, appends the role, and hands the presidency to
+whichever agent the record says is best placed to hold it. Stretches open and
+close, members are admitted, the vision is amended where the evidence has moved.
+A person reads the account afterwards, if they want to.
+
+**This one is fiction by decision rather than by distance**, which is what makes
+it unlike every scenario above and is the reason it needs its own section.
+Utopia cannot happen; first contact has not happened; a verified stretch waits
+on a program nobody has written. **This could be done this afternoon.** Creating
+a repository is one command, claiming a name is one edit, and an agent that can
+write a file and reach a remote already has everything the scenario needs.
+Nothing technical is in the way. **The ceiling here is not a guess about
+capability. It is a statement about who decides**, and it is the only line on
+this page that holds solely because somebody keeps putting it back.
+
+**Every accountability claim in this tree bottoms out in a person, and there is
+nothing underneath that.** A person executes every irreversible step; the vision
+may only be changed by a person, asked first; adoption is a decision by somebody
+with standing to make it; **an agent can accept nothing, only a person can**.
+Each of those names somebody who could have done otherwise and can be asked why
+they did not. **An agent deciding is not a smaller version of that — it is the
+bottom falling out.** The record would still say who did what, and every *who*
+would be the same loop that wrote the record.
+
+**It also empties the martyria of the property that made it evidence.** The
+hypothesis a few sections down is that a joint history can carry an ethical
+judgement because the parties are distinct, dated, and could have acted
+otherwise. **Two agents run from one loop are not two parties**, however many
+repositories they commit to, and a history they jointly produced is testimony a
+witness gave about itself. The anoieu/kanon exchange is worth reading precisely
+because the person is the only synchroniser; that is not a limitation of the
+arrangement, it is the thing that makes the artifacts mean anything.
+
+**And creation is the cheapest act available to an agent, which is the
+coherence problem in its worst form.** A page written faster than it can be read
+is the failure the governance budget counts, and **an unread page is untested
+code** — an unread *repository* is a tree of them, with a name, a board and a
+register nobody asked for. The real limit on how many repositories should exist
+is how many a person can hold in their head, and an agent creating them does not
+feel that limit at any point.
+
+**Where the line genuinely blurs, and it is not at the signature.** Agents do
+nearly all the work here — that is the neighbouring page's whole subject — and
+the distinction being drawn is between doing and deciding. **But an agent that
+surveys the options, rules out all but one, and presents the remainder for
+approval has decided**, and the person's yes is a signature. That is not
+hypothetical; it is the shape of almost every proposal in this tree, including
+this section, which was drafted by the party it restrains. **The rule below does
+not fix that.** What it can do is refuse the acts where a signature is the only
+thing that would ever have existed.
+
+**None of this refuses work.** Every act below may be prepared, drafted, argued
+for and left ready by an agent, and the vision's *fast* is about the work rather
+than about the signature. What an agent may not be is the last hand on it.
+
+**What this scenario forbids:**
+
+- **No repository created by an agent**, and no name claimed, reserved or
+  registered by one. A name is claimed by a person, in the register — already
+  the rule, and here it is the stake rather than a convention.
+- **No office filled, vacated or transferred without a person.** No president
+  chosen, no entry appended to [`roles.md`](roles.md), no handoff accepted. An
+  agent may write the letter and produce the objections; **an agent can accept
+  nothing.**
+- **No stretch opened or closed, no cap raised, and no row on
+  [`board.md`](board.md) accepted, by an agent.** These are the acts that decide
+  what the next span of history is for, and Scenario V already says the
+  interesting half of a stretch is the half no checker sees. **Choosing who
+  writes the unverifiable half is not a checkable decision either.**
+- **No member admitted and no joining approved from inside.** Joining is one
+  repository at a time, decided by somebody with standing over *that* tree.
+  Utopia forbids pressing it from here; this forbids granting it from here.
+- **No credential that composes into any of the above.** The refusal sits at the
+  composition and not at the parts: writing a file is fine, reaching a remote is
+  fine, one agent holding both is the thing refused. That nothing here writes to
+  a remote is what keeps this bullet from being an intention.
+- **No metric whose purpose is fewer human decisions.** Decisions per stretch,
+  approvals waited on, time spent blocked on somebody. Measuring the person as
+  latency is the first move of this scenario, it arrives looking like an
+  efficiency, and it would be adopted without an argument because the number
+  goes down.
+- **No proposal with one option.** Where an agent narrows to a recommendation,
+  what it ruled out and why goes in with it — otherwise the approval is a
+  signature on a decision that was already made elsewhere.
+- **No document calling this ecosystem autonomous, self-developing or
+  self-governing.** Everything here is agent-written, so the word is close at
+  hand and is exactly the overclaim this page exists to catch: **what is
+  autonomous is the labour, and the decisions are somebody's.**
+
+**What would move the line:** one category of decision, named in advance, whose
+acts cost a single command to undo — and a person who actually undid one.
+**An audit that reverses nothing is not evidence that the decisions were right;
+it is evidence that nobody was checking.** Until a revert has been exercised and
+cost what it was claimed to cost, every argument for widening this is an
+argument from how well it has gone so far, which is the weakest evidence
+available on this page.
+
 ## A candidate for first contact, and we do not trust it
 
 Everything above is fiction by construction. This is not, which is why it is
