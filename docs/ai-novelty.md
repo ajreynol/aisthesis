@@ -15,18 +15,26 @@ one, and it is the claim this page makes until a comparison shows otherwise.
 
 ## The state of this review
 
-**The literature has not been surveyed yet. This page is one half of a
-comparison.** Saying so first is not modesty; it is the difference between a
-review and a description of ourselves with the word *review* on it.
+**A first reading pass has happened and the survey is not finished.** On
+2026-09-17 ten works were opened and what they say was written down; before
+that date no entry on this page had been checked against anything. **The page is
+still one and a half halves of a comparison**, and saying which half is which is
+the only thing that keeps the title honest.
 
 **What exists here today:** the ecosystem side, written up mechanism by
-mechanism, with each one naming the outside work it would have to be measured
-against and what that measurement would have to establish.
+mechanism; and [a reading log](#the-reading) recording, per work, what the
+source claims in its own terms and what that did to a row.
 
-**What does not exist:** the reading. No entry below has been checked against a
-source. **The names in the *nearest prior art* column are pointers for a review,
-not citations** — they say where to look, and a reader should treat any of them
-as unverified until somebody reads the thing and writes down what it said.
+**What still does not exist:** a reading for every row. Three rows carry a
+partial or nothing, and one answered row rests on a replacement pointer nobody
+has opened. **A name in the *nearest prior art* column is a citation
+only where the reading log says the source was opened** — everywhere else it is
+still a pointer, and a reader should treat it as unverified.
+
+**The distinction is now recorded per source rather than per page**, because the
+pass turned up the failure it exists to prevent: three rows pointed at work that
+does not say what the row assumed, and one pointed at a body of practice that
+says close to the opposite.
 
 **That distinction is load-bearing here**, because this ecosystem's own rule is
 that a citation to something that does not settle the point is worse than the
@@ -54,8 +62,12 @@ mechanism quietly relocated leaves a reader to rediscover the question; a
 mechanism relocated with *this looked novel and is standard practice, see X*
 answers it once.
 
-**Nothing has been ruled out yet**, which is a fact about the review not having
-started rather than about the contents.
+**One row has been ruled out outright** — [the pinned, fetched
+checker](#ruled-out-the-pinned-fetched-checker) — and five more have been cut
+down to a residue much smaller than the section describing them. **None has yet
+been physically moved to another document**, which is a debt this pass created
+and did not pay: a row marked ordinary that stays in the file it was supposed to
+leave is the relocation rule being described rather than kept.
 
 ## This page does not brag
 
@@ -75,24 +87,322 @@ tried; that is the weaker and more useful claim, and it is the one being made.
 
 ## The register
 
-One row per mechanism. **The third column is the state of the comparison, and it
-reads `unread` everywhere**, which is the accurate summary of this page today.
+One row per mechanism. **The third column is the state of the comparison.** It
+read `unread` on every row until 2026-09-17; it now carries a verdict on six
+rows, a partial on two, and `unread` on one. **A row is only allowed off
+`unread` if the source was opened** — [the reading](#the-reading) says which
+ones were, and by what instrument.
 
-| mechanism | nearest prior art to read | comparison |
+| mechanism | nearest prior art | comparison |
 | --- | --- | --- |
-| [documentation as the thing you are aided by](#clear-writing-is-what-makes-this-fast) | literate programming; docs-as-code; README-driven development; the *context engineering* line of work on agentic coding systems | unread |
-| [a kernel document nothing may check](#visionmd-is-the-kernel) | constitutional and rule-based steering of agents; policy hierarchies in governance; the specification/implementation split | unread |
-| [a citation as a compiler optimization](#a-clear-reference-is-a-compiler-optimization) | retrieval over a project corpus; transclusion and single-source publishing; design by contract | unread |
-| [prose defects as a propagating hazard](#writing-documentation-is-coding-reading-it-is-debugging) | prompt injection and instruction-shaped input; supply-chain integrity for text; documentation drift studies | unread |
-| [scripts are ground truth, and the gap is checked](#scripts-are-the-ground-truth) | executable specifications; doctests and literate testing; drift detection between spec and code | unread |
-| [a pinned, fetched, opt-in checker](#the-build-system-can-be-generalized-and-has-not-been) | dependency pinning and lockfiles; reproducible builds; supply-chain provenance frameworks | unread |
-| [artifacts as the only channel between agents](#the-artifacts-are-the-channel) | multi-agent debate; self-critique and revision loops; LLM-as-judge; ordinary adversarial review | unread |
-| [a completeness check expected to fail](#a-handoff-examination-designed-to-return-a-residue) | handover checklists; RACI matrices; blameless postmortems; incident review practice | unread |
-| [recording what produced a change, not only the change](#the-history-as-a-data-point-offered) | commit trailers and sign-off conventions; model cards and datasheets; provenance and attestation work | unread |
-| [a checker that prints what it cannot decide](#what-all-of-this-costs) | coverage reporting; known-unknowns in static analysis; model cards' *limitations* sections | unread |
+| [documentation as the thing you are aided by](#clear-writing-is-what-makes-this-fast) | Knuth's literate programming (1984); Preston-Werner's README-driven development (2010); the *context engineering* line and its empirical study of agent context files (arXiv:2511.12884) | **instance** — the practice is all three; the economics claim survives and now has a cheaper falsifier than the one the page named |
+| [a kernel document nothing may check](#visionmd-is-the-kernel) | constitutional and rule-based steering of agents; policy hierarchies in governance; the specification/implementation split | unread — the first pass found only secondary accounts of Constitutional AI and stopped rather than cite them |
+| [a citation as a compiler optimization](#a-clear-reference-is-a-compiler-optimization) | Nelson's transclusion; single-source publishing; retrieval over a project corpus | **instance** — transclusion states the copy-diverges argument exactly; only the link-time *failure* framing is left, and it is a metaphor, not a finding |
+| [prose defects as a propagating hazard](#writing-documentation-is-coding-reading-it-is-debugging) | Greshake et al., indirect prompt injection (arXiv:2302.12173) — specifically *spreading injections* and *manipulated content* | **instance, as the page predicted** — with one gap: the taxonomy assumes an adversary and this page's stated threat has none |
+| [scripts are ground truth, and the gap is checked](#scripts-are-the-ground-truth) | Specification by Example and Cucumber's *living documentation*; doctests | partial — the *whole-body* comparison looks nearer to doctests than to Cucumber, and no primary source was opened |
+| [a pinned, fetched, opt-in checker](#the-build-system-can-be-generalized-and-has-not-been) | dependency pinning and lockfiles; SLSA and in-toto provenance | **ruled out — ordinary.** [See below](#ruled-out-the-pinned-fetched-checker); SLSA's own warning about self-attestation lands on this ecosystem and the row never named it |
+| [artifacts as the only channel between agents](#the-artifacts-are-the-channel) | blackboard architectures (Hearsay-II); stigmergy (Grassé 1959); MetaGPT (arXiv:2308.00352); multi-agent debate (arXiv:2305.14325) | **mostly ruled out.** MetaGPT already restricts the channel to structured artifacts. What survives is narrower: *disagreement that cannot be merged away* |
+| [a completeness check expected to fail](#a-handoff-examination-designed-to-return-a-residue) | ~~blameless postmortems~~ → test adequacy and mutation testing; handover checklists; RACI matrices | **pointer falsified.** The SRE postmortem chapter does not say a clean review is a warning sign; it says the opposite. The replacement pointer is unread |
+| [recording what produced a change, not only the change](#the-history-as-a-data-point-offered) | Nygard's Architecture Decision Records (2011); model cards and datasheets | **mostly ruled out.** ADRs are this, fifteen years earlier, including the append-only rule. The residue is the *required falsifier*, which no template asks for |
+| [a checker that prints what it cannot decide](#what-all-of-this-costs) | soundness/completeness in static analysis; model cards' *limitations* sections | partial — the undecidability argument is textbook; the *coverage gap with a reason per gap* is nearer a model card than an analyser |
 
-**The last column is the whole point of the page** and it is empty. Every row is
-a question, and none is an answer.
+**The last column is the point of the page and it is no longer empty.** Seven
+of the ten rows carry an answer. **Six of those seven are downgrades** — five
+mechanisms cut to a residue and one closed outright — and the seventh is a
+pointer found to say the opposite of what the row claimed. **That is the outcome
+the page said to expect and the one it is worth having.**
+
+## The reading
+
+**Ten works, opened on 2026-09-17, in one pass by one agent.** Each entry says
+what the source claims in its own terms first and what it did to a row second,
+because the other order is how a reading gets bent to fit the row it was sent to
+check.
+
+**The instrument is recorded per entry, because the instruments differ.** Six
+were read as primary text — the paper, the whitepaper, the original post. Two
+were read through a fetch-and-summarise tool, which is weak in one specific
+direction: **it is fair evidence that a source says something and poor evidence
+that a source says nothing.** Two were read only in secondary form. **Where a
+verdict below rests on an absence, it is marked, and it is the softest thing on
+this page.**
+
+### Multi-agent debate is the contrast case, not the prior art
+
+**Du et al., *Improving Factuality and Reasoning in Language Models through
+Multiagent Debate* (arXiv:2305.14325). Read in full.**
+
+**What it claims.** Several instances of a language model answer a query
+independently; each is then shown the others' answers and asked for an updated
+response; repeat for a few rounds. With three agents and two rounds it beats
+single-model baselines on six benchmarks, including a biography-factuality set
+the authors introduce because models hallucinate on it badly.
+
+**The channel is a copy, it is ephemeral, and that is the whole difference.**
+Each round's prompt is literally *"These are the solutions to the problem from
+other agents: [other answers]"* — the other agents' text is concatenated into
+this agent's context. There is no shared object anybody reads. There are N
+contexts holding copies, and nothing durable is produced but the final answer.
+
+**Convergence is the goal.** §2.2 is titled *Consensus in Debates* and is about
+how to obtain it; the authors tune how much an agent trusts its own answer and
+report that more "stubborn" prompts lengthen debate and improve the result, with
+consensus still the measured outcome. They note the models are "relatively
+agreeable," and they name the cost: debates "typically converged into single
+final answers" that "were not necessarily correct," with models confidently
+affirming a converged wrong answer.
+
+**What it did to the row.** **On the axis the row cares about this is the
+opposite arrangement.** There, disagreement is what the method exists to remove,
+and the paper's own stated limitation is that removal succeeds on wrong answers
+too. Here neither agent can edit the other, so an objection stays on the page it
+was written on. **The pointer was miscategorised**: multi-agent debate is not
+the nearest prior art for *artifacts as a channel*, it is the contrast case for
+*disagreement that survives*.
+
+### MetaGPT already restricts the channel to artifacts, and says why
+
+**Hong et al., *MetaGPT: Meta Programming for a Multi-Agent Collaborative
+Framework* (arXiv:2308.00352, ICLR 2024). Read.**
+
+**What it claims.** Agents holding software-company roles follow a standard
+operating procedure and — the part that matters here — **"communicate through
+documents and diagrams (structured outputs) rather than dialogue."** They
+publish into a shared message pool and subscribe to it by role, and an agent
+acts "only after receiving all its prerequisite dependencies."
+
+**Its stated reason is ours.** The paper argues that natural-language dialogue
+degrades over rounds — it invokes the telephone game — and that structured
+documents "contain all necessary information, preventing irrelevant or missing
+content," reducing "cascading hallucinations caused by naively chaining LLMs."
+
+**What it did to the row. It rules out most of it.** *Artifacts rather than
+conversation as the channel between agents* is not an observation this ecosystem
+made. It is a published design with a published justification, two years
+earlier, for the same reason. **The row named its candidate difference as "the
+artifacts are the sole channel." That difference is gone.**
+
+**What survives is narrower and has to be stated narrowly.** MetaGPT's pool is a
+shared in-process structure and its SOP is a pipeline: each role's document is
+the next role's input, and there is no supported state in which two agents
+disagree and both records stand. The three consequences the row claims — durable
+disagreement, a trivial audit, a person as the only synchroniser — are not
+properties MetaGPT reports, and two of them that design could not have, because
+nothing in it wants them. **The surviving claim is not "artifacts as channel"
+but "no write access across the boundary, so a disagreement cannot be merged
+away."** The evidence for it is still one round.
+
+### The general form is decades old and was not in the register at all
+
+**Blackboard architectures — Hearsay-II (CMU, 1971–76) — and stigmergy (Grassé,
+1959). Read in secondary form only; neither primary source was opened.**
+
+**Blackboard.** Independent specialist modules, called knowledge sources, never
+message one another. They watch a shared structured store, write partial results
+into it, and react to what others wrote; a control component decides who runs
+next.
+
+**Stigmergy.** Grassé's 1959 term for **"indirect coordination, through the
+environment, between agents"** — the trace an action leaves in a shared medium
+is what prompts the next action, with no signal sent to anyone. The extension to
+human work is not new either: wikis and open-source projects are the textbook
+example.
+
+**What they did to the row. They are the missing pointer, and the omission was
+the register's own error.** The row's second column named multi-agent debate,
+self-critique, LLM-as-judge and adversarial review — four things about *models
+arguing*. It named nothing about *coordinating through a shared artifact*, which
+is what the row actually describes. **The row was pointed at the wrong
+literature, and only reading showed it.**
+
+**Marked secondary, and the verdict is bounded accordingly.** "The general form
+is old" is safe at this depth. Any claim about what Hearsay-II specifically
+reported is not, and none is made.
+
+### Indirect prompt injection covers the propagation claim
+
+**Greshake et al., *Not what you've signed up for: Compromising Real-World
+LLM-Integrated Applications with Indirect Prompt Injection* (arXiv:2302.12173;
+Black Hat US-23 whitepaper). Read in full.**
+
+**What it claims.** Where a model retrieves text and acts on it, the retrieved
+text is instructions: processing retrieved prompts "can act as arbitrary code
+execution," and "the line between data and code (i.e., instructions in natural
+language) would get blurry." Two categories in the taxonomy are this row.
+
+**Spreading injections (prompts as worms).** "The LLM itself acts as a computer
+running and spreading harmful code (i.e., the prompt is a computer worm)" —
+including, in the paper's own words, the case "when an LLM of one application
+writes the injection into a memory that is shared with other applications."
+
+**Manipulated content.** Wrong summaries, disinformation, data hiding,
+undisclosed promotion — and the observation that lands hardest here: "the
+authoritative, convincing tone of LLMs and the overreliance on them being
+impartial may lead users to fall for these manipulation attempts," with the risk
+rising where the content is "harder to verify."
+
+**What it did to the row. It confirmed the row, including the row's prediction
+about itself.** The section wrote down the prior that prose-that-is-adopted
+"needs nothing those two do not already give." **That prior was correct.** A
+document written to be pinned by other repositories, carrying a change that
+reads as a helpful correction, is passive injection into a retrieved source with
+a propagation path — described, named and demonstrated three years ago.
+
+**One gap, and it is the interesting half.** The taxonomy is built around an
+adversary who wants something. **This page's stated threat has no adversary:**
+the dangerous change is "individually reasonable," produced fluently and in
+volume with nobody intending harm. Greshake et al. does not cover that case. The
+literature that would — documentation drift and code-comment inconsistency — is
+named in the row and was not reached by this pass.
+
+### Architecture Decision Records are the provenance row
+
+**Nygard, *Documenting Architecture Decisions* (2011). Read.**
+
+**What it claims.** One short record per decision — context, decision, status,
+consequences — written because a newcomer meeting an unexplained decision can
+only "blindly accept" or "blindly change" it, and a team accumulating decisions
+accepted without understanding "becomes afraid to change anything."
+**Records are never edited.** A reversed decision is kept and marked superseded;
+numbers are sequential and never reused.
+
+**What it did to the row. It rules out most of it.** "A rule names the incident
+that produced it" is an ADR context field. "The record is append-only, so a
+change is visible rather than silent" is Nygard's supersession rule, stated in
+2011 and in wide use since. Model cards and datasheets do the same job for
+models and datasets, with an explicit *limitations* section. **Committing the
+reasoning beside the change is ordinary practice with a template.**
+
+**The residue is one line, and it is worth keeping.** No ADR template, model
+card or datasheet asks for **a falsifier per claim**. Context, decision and
+consequences are all statements about what was chosen; none is a statement about
+what would show the choice mistaken. **That is the only part of this row a
+reading did not find somewhere else**, and it is a discipline rather than a
+mechanism.
+
+### The postmortem pointer is wrong
+
+**Google SRE Book, *Postmortem Culture: Learning from Failure*. Read through a
+fetch-and-summarise tool.**
+
+**What the row assumed.** That expecting a check to fail "is the move blameless
+postmortem practice already makes when it treats a clean incident review as a
+warning sign."
+
+**What the chapter says instead.** Postmortems are triggered by objective
+thresholds — user-visible downtime, data loss, on-call intervention, time to
+resolution, monitoring failure. Quality is judged by completeness: was key data
+collected, are the impact assessments complete, was the root cause sufficiently
+deep, is the action plan appropriate. **The warning sign it names is a
+postmortem with *incomplete* action items — not a clean one.** That is the
+opposite orientation to the one the row borrowed.
+
+**What it did to the row. It falsified the pointer and only the pointer.** The
+handoff examination still returns a residue, and the residue still falsified the
+law that ordered it. Nothing about the mechanism changed. What changed is that
+the outside justification the row leaned on is not there.
+
+**The replacement pointer, unread.** *A check whose expected result is "pass"
+carries no information when it passes* has an exact home in test adequacy:
+mutation testing, where a suite killing no mutants is inadequate by construction
+however green it is. **That is the same claim with decades of formal treatment
+behind it, and nobody here has read any of it.**
+
+**A caveat on the instrument, because this verdict rests on an absence.** The
+chapter was read through a summariser, and **an absence found by that instrument
+is the weakest evidence on this page.** A person reading the chapter is what
+would settle it.
+
+### The economics claim survives and gets a cheaper falsifier
+
+**Knuth, *Literate Programming* (1984), secondary; Preston-Werner, *Readme
+Driven Development* (2010), read; *Agent READMEs: An Empirical Study of Context
+Files for Agentic Coding* (arXiv:2511.12884), read.**
+
+**Preston-Werner's reasons are not ours, which corrects the pointer.** His case
+for the README first is design clarity, parallel work across a team, and having
+something concrete to argue about — *"it's a lot simpler to have a discussion
+based on something written down."* **A reader's speed is not among them.** So
+the row's claim that the contribution is the *economics* is not already made
+there; and Knuth's case — document primary, code derived — is about a program's
+exposition rather than about anybody's reading rate.
+
+**The empirical study is the direct hit and it is recent.** 2,303 agent context
+files across 1,925 repositories. The files behave as "living configuration"
+rather than documentation; about 67% are committed to repeatedly; they grow by
+append with few deletions. The finding that matters here: **a median of 485
+words at a Flesch reading-ease score of 16.6 — the band occupied by legal
+documents — which the authors name *context debt*.**
+
+**What it did to the row. The row survives, and gets an instrument.** This
+page's stated falsifier is "work here getting slower as the corpus gets
+clearer," which nobody can measure. **The study supplies one that could be run
+this afternoon: measure the size and readability of this corpus over time.** A
+corpus getting longer and harder while the claim is that clarity is the input is
+a claim being asserted against its own artifact.
+
+**That measurement is not going to be flattering here.** This page is long,
+heavily bolded, and written in a register nobody would call easy. **The
+instrument was found by reading somebody else's study and it points back at
+us**, which is the argument for reading rather than for pointing.
+
+### Ruled out: the pinned, fetched checker
+
+**SLSA build-provenance specification and in-toto attestations. Read in part.**
+
+**What they claim.** Provenance is verifiable information about where, when and
+how an artifact was produced, signed and carried in a standard envelope. Levels
+run from documented-but-not-tamper-proof, through builder-generated attestations
+and platform hardening, to hermetic and reproducible builds with two-party
+review.
+
+**What it did to the row. It confirms what the row said about itself and adds
+nothing.** Pinning a commit, fetching at build time, and each member choosing
+when to move the pin is dependency management. **The section already wrote
+"there is nothing to claim here and the review should say so plainly." The
+reading says so plainly. The row is closed.**
+
+**One cost the row did not name, and the reading found it.** The standing
+warning in that literature is that **self-attestation can be misleading or
+fabricated, and that this is an open problem.** The pinned dependency here is a
+judgement about a repository, produced by a checker written inside the same
+ecosystem it measures, and moved by the repository being measured. **That is
+self-attestation with extra steps**, and the row presented it as a strength.
+
+### Transclusion is the citation row, without the compiler vocabulary
+
+**Nelson's transclusion; single-source publishing. Read in secondary form.**
+
+**What it claims.** Content included by reference stays linked to its origin and
+therefore identical to it. Where transclusion is unavailable a static copy is
+substituted instead — and copies diverge.
+
+**What it did to the row.** "A citation is a reference; a paraphrase is a copy,"
+and copies diverge invisibly, is transclusion's founding claim. **What is left
+is the link-time framing** — that a citation resolves in the reader's head and
+fails like a missing symbol at load, found by the reader rather than the author.
+**That is a metaphor, and a metaphor is not a finding.** It is kept because it
+explains well, and it is not counted.
+
+### What this pass did not do
+
+**Three rows are still unsettled** — the kernel row, where the pass found only
+secondary accounts of constitutional steering and stopped rather than cite them;
+the ground-truth row, where no primary source was opened; and the coverage-gap
+row, where the static-analysis literature was skimmed and not read. **A fourth
+row is answered but rests on a replacement pointer nobody has opened**, which is
+the same debt wearing a verdict.
+
+**Nothing has been relocated.** Six rows now describe ordinary practice in whole
+or in part and all six are still in this file, which is the relocation rule
+being described rather than kept.
+
+**And the pass cost what this page is worst at affording.** It added several
+thousand words of prose to a document whose own closing section says governance
+is the cheapest thing here to produce and that nothing prices it. **The defence
+is that the words are somebody else's claims rather than ours, and that five
+rows got smaller.** Whether that is a defence or the same failure with citations
+attached is not for this page to decide.
 
 ## Clear writing is what makes this fast
 
@@ -148,6 +458,16 @@ clearer, or the corpus getting clearer while the things it is supposed to
 produce — checks, findings, adopted work — stay flat. The second is measurable
 and the counter for it is the governance budget. It is not currently reading
 well.
+
+**Read, and the falsifier got cheaper — see [the
+reading](#the-economics-claim-survives-and-gets-a-cheaper-falsifier).** The
+economics claim survives contact with Knuth and Preston-Werner, whose stated
+reasons are about design and coordination rather than a reader's rate. **What
+the empirical study of 2,303 agent context files supplies is an instrument this
+page did not have:** measure the corpus's length and readability over time.
+Those files run to a median 485 words at a reading-ease score in the band
+occupied by legal documents, which the authors call *context debt*. **Run that
+measurement here and it will not flatter this page.**
 
 ## `vision.md` is the kernel
 
@@ -225,12 +545,14 @@ the same: they diverge, and the divergence is invisible from the side that
 matters. Where a copy has to exist, something compares it; where it does not
 have to exist, a reference is strictly better.
 
-**How we relate, provisionally.** This is single-source publishing and
-transclusion, argued in compiler vocabulary. **Retrieval over a project corpus
-is the agent-era version of the same trade** — fetch the authoritative text
-rather than restating it — and the comparison worth making is whether the
-*failure mode* framing (a missing symbol at load, found by the reader) adds
-anything to what retrieval work already says about stale and wrong context.
+**Read, and it is transclusion — see [the
+reading](#transclusion-is-the-citation-row-without-the-compiler-vocabulary).**
+*A citation is a reference; a paraphrase is a copy*, and copies diverge
+invisibly, is transclusion's founding claim, stated without any compiler
+vocabulary at all. **What is left of this section is the link-time failure
+framing**, and a metaphor is not a finding. It is kept because it explains well
+and it is not counted. Whether it adds anything to what retrieval work says
+about stale context is still unread.
 
 ## Writing documentation is coding; reading it is debugging
 
@@ -267,13 +589,21 @@ visible rather than silent; and a claim that cannot be justified from evidence
 is refusable on stated grounds. **The defence is that manipulation has to happen
 in public and in front of somebody.**
 
-**How we relate, provisionally.** This is the same shape as instruction-shaped
-input arriving in a system that reads text and acts on it, which the prompt
-injection literature has worked on directly and at length; and the *propagates
-into trees that pinned us* half is a text supply-chain problem, which provenance
-and attestation work addresses for artifacts rather than for prose. **The review
-question is whether prose-that-is-adopted needs anything those two do not
-already give**, and the honest prior is that it does not.
+**Read, and the prior was right** — see
+[the reading](#indirect-prompt-injection-covers-the-propagation-claim).
+This section's prior was that prose-that-is-adopted needs nothing the prompt
+injection and provenance literatures do not already give. **It does not.**
+Greshake et al. names the propagation case directly — "the prompt is a computer
+worm", including where "an LLM of one application writes the injection into a
+memory that is shared with other applications" — and names the plausible-but-
+wrong case as *manipulated content*, observing that an authoritative tone is
+itself part of the attack.
+
+**One gap, and it is the half worth working on.** That taxonomy assumes an
+adversary who wants something. **The threat this section actually describes has
+none** — a change that is individually reasonable, produced fluently, with
+nobody intending harm. The literature for the no-adversary case is documentation
+drift and code-comment inconsistency, named above and still unread.
 
 ### The limit worth stating plainly: this repository can hide nothing
 
@@ -345,14 +675,19 @@ of them new:
 - **Each member chooses when.** Taking a newer pin is their decision at a moment
   they pick, exactly as joining is.
 
-**How we relate, provisionally.** All four are dependency management as
-practised everywhere: lockfiles, pinned revisions, and the reproducible-builds
-argument that a build which can change without a commit is not evidence about a
-commit. **There is nothing to claim here and the review should say so plainly.**
-The only part that might not be ordinary is that the pinned dependency is a
-*judgement about your repository* rather than a library — and the nearest
-outside analogue for that is supply-chain attestation, which is worth reading
-before claiming a difference.
+**Read, and ruled out — see [the
+reading](#ruled-out-the-pinned-fetched-checker).** All four are dependency
+management as practised everywhere: lockfiles, pinned revisions, and the
+reproducible-builds argument that a build which can change without a commit is
+not evidence about a commit. **This section already said there was nothing to
+claim here. The reading agrees, and the row is closed.**
+
+**What the reading added was a cost, not a difference.** The standing warning in
+the provenance literature is that **self-attestation can be misleading or
+fabricated and remains an open problem** — and the pinned dependency here is a
+judgement about a repository, produced by a checker written inside the ecosystem
+it measures, moved by the repository being measured. **This section presented
+that arrangement as a strength.**
 
 *What would show the generalization is real:* a second tree running one of these
 commands that it did not write, against its own state, and getting an answer its
@@ -404,15 +739,26 @@ the workflow surfaced the conflict without either side being able to quietly
 adopt the other's view. That is the mechanism working, and it is also a defect
 that has to be fixed by a person.
 
-**How we relate, provisionally, and this is the row most likely to collapse.**
-Multi-agent debate, self-critique and revision loops, and LLM-as-judge are all
-established forms of *two model instances disagreeing productively*, and plain
-adversarial review is the human version. **The only candidate difference is that
-the artifacts are the sole channel** — no shared transcript, no shared memory,
-no write access to each other — which makes the disagreement durable and the
-audit trivial. The specific question for the review: does any existing
-multi-agent setup already restrict the channel to committed artifacts, and if
-so, did it report the same three consequences?
+**Read, and the row largely collapsed** — see
+[the reading](#metagpt-already-restricts-the-channel-to-artifacts-and-says-why).
+The specific question this section set for the review was whether any existing
+multi-agent setup already restricts the channel to committed artifacts.
+**[MetaGPT](#metagpt-already-restricts-the-channel-to-artifacts-and-says-why)
+does, and published the same justification two years earlier**, and the general
+form — [blackboard architectures and
+stigmergy](#the-general-form-is-decades-old-and-was-not-in-the-register-at-all)
+— is decades older than that. **So "the artifacts are the sole channel" is not
+the difference and this section should stop implying it is.**
+
+**What survives is one of the three consequences, not all three.** Neither
+MetaGPT nor [multi-agent
+debate](#multi-agent-debate-is-the-contrast-case-not-the-prior-art) has a state
+in which two agents disagree and both records stand — debate exists to remove
+disagreement, and MetaGPT's pipeline has no room for it. **Consequence 3 is
+therefore the claim, and consequences 1 and 2 are properties of any
+artifact-mediated design.** The row's second column was also pointed at the
+wrong literature: four entries about models arguing, none about coordinating
+through a shared store.
 
 **The honest state of the evidence:** one round, two agents from the same
 vendor, on a project five days old, with the same person prompting both. **That
@@ -451,13 +797,19 @@ anybody.** The only guard is a convention that the *reason* is written rather
 than the answer — **a bare yes is a sentence nobody can argue with, which is the
 same as one nobody can correct.**
 
-**How we relate, provisionally.** Handover checklists are ancient and
-partitioning responsibility into a table is what a RACI matrix is; *expecting
-the check to fail* is the move blameless postmortem practice already makes when
-it treats a clean incident review as a warning sign. **The specific things to
-test** are whether asking an agent to declare what it is *not ready to release*
-produces anything a plain inventory does not, and whether expected-to-fail is
-more than honest wording on an ordinary checklist. **We have one instance.**
+**Read, and the pointer was wrong — see [the
+reading](#the-postmortem-pointer-is-wrong).** This section claimed that
+*expecting the check to fail* is what blameless postmortem practice does when it
+treats a clean incident review as a warning sign. **The SRE postmortem chapter
+does not say that.** It judges a postmortem by completeness — was the data
+collected, are the impact assessments complete, was the root cause deep enough —
+and the warning sign it names is a postmortem with *incomplete action items*.
+**The borrowed justification is withdrawn; the mechanism is untouched.**
+
+**The pointer that should replace it is unread.** *A check whose expected result
+is "pass" carries no information when it passes* is the test-adequacy argument,
+and mutation testing is its precise form. Handover checklists and RACI matrices
+remain unread too. **We still have one instance.**
 
 ## A worked example: moving one directory
 
@@ -565,13 +917,18 @@ counter-cases scarcer — and the bending would not feel like dishonesty from
 inside. It would feel like having a good week. **That discipline is young and
 has already failed once**, which is recorded rather than smoothed over.
 
-**How we relate, provisionally.** Recording *what produced a change* alongside
-the change is what commit trailers and sign-off conventions already do at small
-scale, and what model cards and datasheets do for models and datasets: a
-structured statement of what a thing is, how it was made, and what it does not
-cover. **The review question is whether a repository-scale version of that —
-reasoning committed beside the change, with falsifiers required — exists
-already**, and if it does, whether anybody found it worth the cost.
+**Read, and mostly ruled out** — see
+[the reading](#architecture-decision-records-are-the-provenance-row).
+Recording what produced a change alongside the change is **Architecture Decision
+Records, specified in 2011**, down to the append-only rule: a reversed decision
+is kept and marked superseded rather than edited. Model cards and datasheets do
+the same job for models and datasets, with a *limitations* section this
+ecosystem has no equivalent of.
+
+**One thing was not found anywhere and is the whole residue: the required
+falsifier.** No ADR template, model card or datasheet asks what would show the
+entry wrong. **That is a discipline rather than a mechanism**, and it is the
+only part of this row a reading did not place somewhere else.
 
 ## What all of this costs
 
@@ -580,37 +937,64 @@ The section that keeps the rest honest.
 **Governance is the cheapest thing here to produce, and nothing prices it.** An
 agent can write a defensible page in minutes and every page is individually
 defensible; the total is what nobody was counting. **This page is on the wrong
-side of that counter** — it is written prose, it displaces nothing yet, and the
-thing that has to pay for it is the review it promises and has not done.
+side of that counter and the first reading pass did not move it across** — the
+review it promised is a tenth done, and paying that tenth cost several thousand
+further words on a page that was already the longest thing in the tree.
+
+**The honest accounting of the pass is two-sided.** Against it: the page grew by
+about half again, and growth is the failure mode this section exists to name.
+For it: **five rows got smaller, one closed outright, four pointers were
+corrected, and the words added are other people's claims rather than ours.**
+Whether that is a defence or the same failure with citations attached is a
+question this page cannot settle about itself.
 
 **Diagnosis is not treatment**, and this ecosystem is much better at the first.
 Writing an account of one's own mechanisms is exactly the activity that feels
 like progress and is not, and the sharpest criticism it has received from
 outside is that the quality of its self-criticism has been functioning as a
-substitute for the work rather than a spur to it. **That criticism applies to
-this page more than to most**, and the register's empty third column is the
-measurable form of it.
+substitute for the work rather than a spur to it. **That criticism still applies
+to this page**, and its measurable form has changed rather than gone: the third
+column is no longer empty, and **not one downgraded row has left the file**.
 
-**One reading, one tree.** Everything above is drawn from this ecosystem, which
-is small, young, and mostly written by agents under one person's supervision.
-None of it has been tried anywhere that did not already believe it.
+**One reading, one tree, and the reader is the subject.** Everything above is
+drawn from this ecosystem, which is small, young, and mostly written by agents
+under one person's supervision. None of it has been tried anywhere that did not
+already believe it — **and the review of whether it is novel was carried out by
+the same ecosystem, in one sitting, with no outside reader at any point.**
 
 ## What would show this page is wrong
 
-**The review never starts.** The register's third column stays `unread` while
-the mechanism sections grow. That is this page becoming the thing it replaced —
-a description of ourselves with a comparative title — and it is the most likely
-failure by a wide margin.
+**Three of these were written as predictions before any reading had been done.
+One pass has now happened, so each is marked with what it did.**
 
-**A name in the second column turns out not to say what the row assumes.** Each
-is an unverified pointer, and the first reading pass should be expected to
-correct several of them. **A pointer that survives contact with the source
-unchanged is the suspicious outcome, not the reassuring one.**
+**The review never starts.** ~~The register's third column stays `unread` while
+the mechanism sections grow.~~ **Retired on 2026-09-17**: seven rows carry a
+verdict. **The successor failure is worse and is now the one to watch — the
+review starts, stops, and the stopping is never recorded.** Three rows are
+unsettled and a fourth rests on an unopened pointer; if they are all still like
+that when this page has grown again, that is the same failure with one pass of
+cover.
 
-**Nothing gets downgraded.** If a full reading pass moves no mechanism out of
-this file, the filter is not working — the prior is that most of these are
-ordinary practice arriving somewhere new, so a review that confirms every row is
-measuring the reviewer rather than the rows.
+**A name in the second column turns out not to say what the row assumes.**
+**Happened, four times.** The postmortem pointer says close to the opposite of
+what the row claimed; the debate pointer is the contrast case rather than the
+prior art; Preston-Werner's reasons are not the row's reasons; and the artifacts
+row named four literatures, none of them the right one. **A pointer that
+survives contact with the source unchanged is the suspicious outcome** — and six
+of the ten works read did change the row that sent for them.
+
+**Nothing gets downgraded.** **Did not happen, and that is the reassuring
+part.** Five rows shrank and one closed outright. **The new version of this
+failure is that nothing gets *moved*:** a row can be marked ordinary and still
+sit here indefinitely, and six now do. **A downgrade that never leaves the file
+is a downgrade nobody has to act on.**
+
+**And one failure this pass created that the page had not anticipated: the
+reading is done by the thing being reviewed, with the instruments it happens to
+have.** Two verdicts above rest on a fetch-and-summarise tool, one of them on an
+absence that instrument is bad at establishing. **Nobody outside has checked any
+of this, and a review of one's own novelty conducted entirely by oneself has the
+failure mode the whole page was written about.**
 
 *Two documents referenced by earlier versions of this page — `coherence.md`,
 which held the governance budget, and `linker.md`, which this page was once a

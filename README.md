@@ -12,7 +12,7 @@ Neither is finished, and neither is a result.
 
 | document | what it is for |
 | --- | --- |
-| [`docs/ai-novelty.md`](docs/ai-novelty.md) | **review the literature on state-of-the-art AI systems, and say how this ecosystem relates to it.** One row per mechanism this ecosystem runs on, the nearest outside work it would have to be measured against, and the state of that comparison |
+| [`docs/ai-novelty.md`](docs/ai-novelty.md) | **review the literature on state-of-the-art AI systems, and say how this ecosystem relates to it.** One row per mechanism this ecosystem runs on, the nearest outside work it is measured against, and the state of that comparison — plus a reading log of what each source actually said |
 | [`docs/science-fiction.md`](docs/science-fiction.md) | the upper bound: the furthest this ecosystem allows itself to plan, and seven scenarios written out in order to mark where that ceiling falls. **Marked on its own front matter as agent-written fiction that is not to be taken seriously** |
 
 **There is nothing to build and nothing to run.** The work here is reading and
@@ -20,14 +20,20 @@ writing, and the documents are the whole of the output.
 
 ## What this repository does not claim
 
-**The survey is the goal and it has not been done.** Reviewing the state of the
-art is what `ai-novelty.md` is *for*, and no entry in it has yet been checked
-against a source — every comparison in its register reads `unread`, which is the
-accurate summary of the page today. Names in it are pointers for a review, **not
-citations**. **Nothing here is a grade:** whether the practice described is any
-good is settled elsewhere, and not by this tree. **And nothing here is a
-prediction** — the scenarios are fiction by construction, and the page that
-carries them says so at the top in the loudest terms it has.
+**The survey is the goal and it is a tenth done.** Reviewing the state of the
+art is what `ai-novelty.md` is *for*. **One reading pass happened on
+2026-09-17**: ten works opened and seven of the ten register rows given a
+verdict. **Six of those seven are downgrades** — five mechanisms cut to a
+residue, one closed as ordinary — and the seventh is a pointer found to say the
+opposite of what the row claimed. **Three rows are still unsettled, and a name
+on any of them is a pointer, not a citation** — the reading log says per source
+which were opened and by what instrument, and nothing outside that log has been
+checked by anyone.
+
+**Nothing here is a grade:** whether the practice described is any good is
+settled elsewhere, and not by this tree. **And nothing here is a prediction** —
+the scenarios are fiction by construction, and the page that carries them says
+so at the top in the loudest terms it has.
 
 ## The name
 

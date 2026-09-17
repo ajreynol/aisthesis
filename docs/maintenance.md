@@ -7,17 +7,21 @@ agent — this is the page to start on.** It is short, because the tree is.
 
 Two written documents and nothing else. [`ai-novelty.md`](ai-novelty.md) sets
 out to review the literature on state-of-the-art AI systems and say how this
-ecosystem relates to it; its register carries one row per mechanism and the
-comparison column is empty, which is the honest state of it.
+ecosystem relates to it; its register carries one row per mechanism, and after
+one reading pass on 2026-09-17 seven of the ten rows carry a verdict and three
+do not, which is the honest state of it.
 [`science-fiction.md`](science-fiction.md) is the ceiling on how far ahead this
 ecosystem lets itself write, and is marked at the top as agent-written fiction
 not to be taken seriously. Both are prose, still being worked on, and neither is
 finished.
 
-**The one job worth doing next is the reading**: take a row of that register,
-read what is named in it, and write down what the source actually says. Rows
-that turn out to describe ordinary practice leave the file, which is the point
-of keeping them in one.
+**There are two jobs worth doing next, and the second is now overdue.** The
+first is more reading: take one of the three unsettled rows, read what is named
+in it, and write down what the source actually says. **The second is the
+relocation the first pass skipped** — six rows have been found to describe
+ordinary practice in whole or in part, and all six are still sitting in the file
+they were supposed to leave, which makes the rule a description rather than a
+practice.
 
 ## What the person does
 
