@@ -1,0 +1,25 @@
+name: anoieu
+
+on: [push, pull_request]
+
+jobs:
+  policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: the policy checker, at the commit this repository pins
+        env:
+          # The checker this repository holds itself to. 6f9ee38 is the first
+          # commit whose scripts/policy_check.py knows the `associate` footing:
+          # everything earlier — including 87ad682, which kanon pins — has no
+          # `associate_in`, would read the marker on docs/maintenance.md as
+          # nothing at all, and would fail this tree for want of the front-page
+          # declaration the footing exists in order not to carry. Green at this
+          # commit across all 7 of anoieu's check runs, checked 2026-09-17.
+          ANOIEU_REV: 6f9ee38b3c142dce22458a5ba290c062b7899aa9
+        run: |
+          git clone --quiet https://github.com/ajreynol/anoieu /tmp/anoieu
+          git -C /tmp/anoieu checkout --quiet "$ANOIEU_REV"
+      # The path belongs to the pin: the checker moved from tools/ to scripts/
+      # in anoieu's own history. Move the two together.
+      - run: python3 /tmp/anoieu/scripts/policy_check.py --root .
