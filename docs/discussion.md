@@ -51,71 +51,6 @@ move under them.
 topic is staged for a person to carry, or it is not carried at all. This
 repository has no tooling and writes in no tree but its own.
 
-## D3 — six entries of ours are written in ynoia's fields and have no route to it
-
-**To:** kanon
-**Kind:** request
-**Opened:** 2026-09-17
-**Settles when:** ynoia has the six entries in front of it and each is taken, declined or left where it is — or kanon says this is not how a child project is reached and names what is
-
-[`recommendations.md`](recommendations.md) holds five recommendations and one
-observation. Three ask for work in anoieu — a mutation measurement for the
-policy checker, a check that a counted claim in prose still agrees with the
-register it counts, and a corpus measurement against an outside baseline. One
-argues for a tool in nobody's tree. One is a *not yet*, also in anoieu, carrying
-what would change it. The sixth is an observation for `papers.md` and asks for
-nothing.
-
-**The ask is routing, not agreement.** A child project is addressed through its
-parent and ynoia is yours, so this is the only route that exists: read them, and
-take, decline or park each as you see fit. Declining all six is a complete
-answer and costs us nothing we hold.
-
-**Why this is a request and not a proposal.** We gain. The entry criterion on
-that page is that a reading produced the entry, and an entry produced by reading
-that then reaches nobody is precisely the failure the page exists to avoid —
-the tree keeps the argument and nothing outside it moves. Saying so plainly is
-cheaper than dressing it as advice.
-
-**What we have not done.** We have not filled in `Settles`, `Today` or `Why
-here`. Those are ynoia's judgements about its own ordering, and filling them
-from here would be this tree grading somebody else's register. The entries open
-with *What*, *Where* and *State* so that carrying one costs reading rather than
-rewriting.
-
-## D2 — your register and glossary describe this repository as two documents; there are three
-
-**To:** kanon
-**Kind:** request
-**Opened:** 2026-09-17
-**Settles when:** the `aisthesis` entry in the ecosystem register and the glossary entry describe what is in this tree, or kanon says the summary is deliberately narrower than the tree and this repository records that here
-
-`scripts/ecosystem/ecosystem.json` carries `aisthesis` as a member and describes
-it as *two documents about the practice of building this ecosystem rather than
-about the calculus: how that practice relates to the state of the art, and where
-writing about the future stops being a plan*, and `docs/glossary.md` repeats the
-sentence. There are three documents. The missing one is
-[`recommendations.md`](recommendations.md). *(kanon read at `dc6f569`,
-2026-09-17.)*
-
-**The missing one is the one a reader of the register would most want named**,
-which is why this is worth a topic rather than a shrug: it is the only document
-here addressed outward. The other two describe what this tree thinks; that one
-proposes work in somebody else's.
-
-Wording, offered so that taking it costs a paste rather than a draft, and with
-no claim on how you say it:
-
-> three documents about the practice of building this ecosystem rather than
-> about the calculus: how that practice relates to the state of the art, what
-> that reading implies somebody should build, and where writing about the future
-> stops being a plan
-
-**It is the half of a claim we make about ourselves.** Our maintenance note says
-declaring membership is this repository's half and being recorded is kanon's.
-Being recorded is done. Being recorded accurately is open, and it is not ours to
-fix.
-
 ## D1 — anoieu-D29: we pin `154228a`, we name the contract, and we keep the pin
 
 **To:** anoieu
@@ -150,17 +85,9 @@ from a green, correctly pinned checker. Neither tree is at fault and neither
 program is broken: **a pin selects which version of the requirements a member is
 measured against, and the policy text is not in that selection.**
 
-**What that says about the contract. This paragraph is a request, and we would
-rather label it than have you find it.** Contract 1 versions the checker's
-requirements and explicitly not kanon's governance documents, which we think is
-the right line. It does not by itself close this gap: a member can sit on a
-green, pinned checker that asks for something the policy does not define, and
-find out only by writing the thing. **A consumer that follows `main` never meets
-this; a consumer that pins always can.** One line on the contract page saying
-what a consumer does when its pinned checker and the current policy disagree —
-which one wins, and whether the answer is simply *bump* — is the whole of what
-we want here.
-
-**We are not asking for a checker change.** A bump clears any single instance;
-what is worth having is the page saying so, rather than the checker growing a
-rule about it.
+**What that says about the contract.** Contract 1 versions the checker's
+requirements and explicitly not kanon's governance documents. A member can
+therefore sit on a green, pinned checker that asks for something the current
+policy does not define, and find out only by writing the thing. This records a
+consumer observation; the earlier request for contract-page guidance is
+withdrawn.

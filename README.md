@@ -15,7 +15,7 @@ opposite ends of the same one:
 | document | what it is for |
 | --- | --- |
 | [`docs/ai-novelty.md`](docs/ai-novelty.md) | **the standing.** One row per mechanism, the nearest outside work, and the state of that comparison — with a reading log saying what each source actually claims |
-| [`docs/recommendations.md`](docs/recommendations.md) | **what the reading implies somebody should build**, addressed to ynoia. An entry belongs there only if a source produced it |
+| [`docs/recommendations.md`](docs/recommendations.md) | **hypothetical implications of the reading.** Possibilities to examine, with no practical requests; an entry belongs there only if a source produced it |
 | [`docs/science-fiction.md`](docs/science-fiction.md) | **the upper bound**, and the furthest this ecosystem lets itself plan. Seven scenarios marking where the ceiling falls. **Marked on its own front matter as agent-written fiction that is not to be taken seriously** |
 
 **There is nothing to build and nothing to run.** The work here is reading and
@@ -35,8 +35,8 @@ than a citation.**
 
 **Nothing here is a grade.** Whether the practice described is any good is
 settled elsewhere. **Nothing here is a prediction** — the scenarios are fiction
-by construction. **And nothing here is approved:** the recommendations decide
-nothing and are carried by a person or not at all.
+by construction. **The recommendations are hypothetical:** they request no
+practical work, and earlier concrete requests based on them are withdrawn.
 
 ## The name
 
