@@ -31,7 +31,7 @@ has opened. **A name in the *nearest prior art* column is a citation
 only where the reading log says the source was opened** — everywhere else it is
 still a pointer, and a reader should treat it as unverified.
 
-**The distinction is now recorded per source rather than per page**, because the
+**The distinction is recorded per source rather than per page**, because the
 pass turned up the failure it exists to prevent: three rows pointed at work that
 does not say what the row assumed, and one pointed at a body of practice that
 says close to the opposite.
@@ -51,23 +51,30 @@ output**, not the ones that survive.
 
 ## What happens when something turns out not to be novel
 
-**It is kept, and it moves out of this file.** Not deleted — the mechanism is
-usually real and worth describing, and the only thing that was wrong is where it
-was filed. **It goes to the document that describes that part of the
-machinery**, and what stays here is one line saying where it went and what ruled
-it out.
+**What leaves is the claim, not the description.** The mechanism is usually real
+and worth describing, and the ecosystem side of each comparison is what this page
+exists to hold — so the section stays. What the reading removes is the claim that
+the mechanism is unusual, and the row records what removed it: *this looked novel
+and is standard practice, see X*.
 
-**The judgement is the valuable part and is the thing most easily lost.** A
-mechanism quietly relocated leaves a reader to rediscover the question; a
-mechanism relocated with *this looked novel and is standard practice, see X*
-answers it once.
+**The judgement is the valuable part and the thing most easily lost.** A
+mechanism quietly downgraded leaves a reader to rediscover the question; one
+downgraded with its reason attached answers it once. So the verdict is written in
+the register's third column, in the reading it rests on, and in the section
+itself — three places, because a reader arriving at any one of them should not be
+misled by it.
 
-**One row has been ruled out outright** — [the pinned, fetched
-checker](#ruled-out-the-pinned-fetched-checker) — and five more have been cut
-down to a residue much smaller than the section describing them. **None has yet
-been physically moved to another document**, which is a debt this pass created
-and did not pay: a row marked ordinary that stays in the file it was supposed to
-leave is the relocation rule being described rather than kept.
+**Physically moving a description into the document that owns the machinery is
+another repository's page and a person's decision.** Every mechanism here is
+described, where it is described at all, in a document some other tree keeps.
+This repository writes in no tree but its own, so no row can be relocated from
+here and no such request has been made. **What is not available is a row that
+keeps a novelty claim because a destination is inconvenient.**
+
+**One row is ruled out outright** — [the pinned, fetched
+checker](#ruled-out-the-pinned-fetched-checker) — and five more are ordinary in
+part. All six say so where they stand, at the length they were written;
+**shortening them to the residue is the job this page has not done.**
 
 ## This page does not brag
 
@@ -87,10 +94,9 @@ tried; that is the weaker and more useful claim, and it is the one being made.
 
 ## The register
 
-One row per mechanism. **The third column is the state of the comparison.** It
-read `unread` on every row until 2026-09-17; it now carries a verdict on seven
-rows, a partial on two, and `unread` on one. **A row is only allowed off
-`unread` if the source was opened** — [the reading](#the-reading) says which
+One row per mechanism. **The third column is the state of the comparison**, and
+it carries a verdict on seven rows, a partial on two, and `unread` on one. **A
+row is only allowed off `unread` if the source was opened** — [the reading](#the-reading) says which
 ones were, and by what instrument.
 
 | mechanism | nearest prior art | comparison |
@@ -397,9 +403,9 @@ row, where the static-analysis literature was skimmed and not read. **A fourth
 row is answered but rests on a replacement pointer nobody has opened**, which is
 the same debt wearing a verdict.
 
-**Nothing has been relocated.** Six rows now describe ordinary practice in whole
-or in part and all six are still in this file, which is the relocation rule
-being described rather than kept.
+**Nothing has been shortened.** Six rows describe ordinary practice in whole or
+in part, each at the length it was written before the reading — the verdict is
+recorded and the prose around it is not.
 
 **And the pass cost what this page is worst at affording.** It added several
 thousand words of prose to a document whose own closing section says governance

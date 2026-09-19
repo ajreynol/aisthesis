@@ -18,13 +18,13 @@ is finished. [`discussion.md`](discussion.md) is the channel to the other tools
 in the ecosystem: correspondence rather than a document, gated at the top, and
 emptied topic by topic as each discussion ends.
 
-**There are two jobs worth doing next, and the second is now overdue.** The
-first is more reading: take one of the three unsettled rows, read what is named
-in it, and write down what the source actually says. **The second is the
-relocation the first pass skipped** — six rows have been found to describe
-ordinary practice in whole or in part, and all six are still sitting in the file
-they were supposed to leave, which makes the rule a description rather than a
-practice.
+**There are two jobs worth doing next.** The first is more reading: take one of
+the three unsettled rows, read what is named in it, and write down what the
+source actually says. **The second is the shortening the first pass skipped** —
+six rows describe ordinary practice in whole or in part, and each still runs at
+the length it was written before the reading said so. Moving a description out
+of this tree is another repository's page and a person's decision; cutting one
+down to what survived the reading is this tree's own work.
 
 **`recommendations.md` is hypothetical.** Its entries are for examination within
 the document. The concrete routing and register-update requests based on it
@@ -64,8 +64,17 @@ here, it is this repository's decision and nobody else's, and the commit is only
 ever one where the checker's own build is green — read, not assumed, and the
 reading is written beside the pin.
 
-**A dated observation about kanon's record.** At `dc6f569`, read on 2026-09-17,
-kanon's ecosystem register and glossary described `aisthesis` as two documents.
-This tree has three; [`recommendations.md`](recommendations.md) was the one
-neither named. This is a local observation, with no register or glossary update
-requested.
+**A pin is one of two forms, and this repository has taken it deliberately.**
+The shared policy allows either a checker commit, which moves only when we move
+it, or a called workflow naming a policy contract, which fixes the obligations
+and lets the implementation change underneath. **We keep the pin.** This tree
+has no code, so bumping by hand costs a minute, and a build that cannot turn red
+without a commit here is worth more than that minute: a reader of a red build
+can conclude that something in *this* tree changed. *(kanon's joining section
+names both forms and holds that either satisfies the rule; read 2026-09-18.)*
+
+**What a pin does not select is the policy text.** The contract versions the
+checker's requirements and explicitly not kanon's governance documents, so this
+tree can sit on a green, pinned checker that asks for something the current
+policy does not define. Neither program is broken when that happens, and the pin
+is no defence against it — it is the one thing moving the pin cannot control.
